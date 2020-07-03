@@ -2,10 +2,49 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <!-- MENÚ DESPLEGABLE -->
+    <nav id="menu" class="hidden">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pokédex</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><input placeholder="Buscar..."></li>
+      </ul>
+    </nav>
+  
+    <!-- PRIMERA PÁGINA: BIENVENIDA USUARIO -->
+    <div id="firstPage" class="screen1">
+      <div class="welcome">
+        <h1 class="welcomeToPokedex">¡Bienvenido a tu Pokédex!</h1>
+        <img class="pgLogo" src="img/Logo_Pokémon_GO.png">
+          <div class="loginContainer">
+            <label class="label">Nombre de Usuario</label>
+            <input class="username" type="text"  placeholder="Escribir acá...">
+            <label class="label">Password</label>
+            <input class="password" type="password"  placeholder="*********">
+            <button id="firstButton" class="sendInfo" type="button">Ir a mi Pokédex</button>
+          </div>
+      </div>
+    </div>
+
+    <!-- SEGUNDA PÁGINA: POKEDEX DESPLEGADA -->
+    <div id="secondPage" class="screen2 hidden">
+      <div>
+        <select class="filter">
+          <option>Ordenar A-Z</option>
+        </select>
+      </div>
+    
+    </div>
+
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>

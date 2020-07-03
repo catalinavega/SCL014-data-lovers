@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.hidden {
+    display: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.screen1 {
+    background-image: linear-gradient(to bottom, #24CCAA, #57D1A4, #76D59F, #91D99C, #A8DD9C);
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.welcome {
+    display: flex;
+    flex-flow: wrap column;
+    align-content: center;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+}
+
+.welcomeToPokedex {
+    align-self: center;
+    color: #F1FFEF;
+    padding: 40px;
+}
+
+.pgLogo {
+    align-self: center;
+    width: 35%;
+}
+
+.loginContainer {
+    display: flex; 
+    flex-direction: column;
+    background-color: #F1FFEF;
+    padding-left: 25px;
+    border-radius: 10px;
+}
+
+.label{
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.username, .password {
+    width: 250px;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    background: #b9b9b9;
+    border-radius: 100px;
+    border-style: none;
+}
+
+.sendInfo {
+    font-size: 20px;
+    align-self: right;
+    padding: 20px;
+    width: 250px;
+    background: linear-gradient(180deg, #A8DD9C 0%, #24CCAA 100%);
+    color: white;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    font-family: 'Roboto', sans-serif;
+}
