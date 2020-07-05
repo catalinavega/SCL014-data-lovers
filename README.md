@@ -24,6 +24,7 @@ Pokémon por el orden de la Pokédex nos parecía fundamental (del #001 al #251)
 el orden ha sido un factor determinante a la hora de insertarse en el mundo de Pokémon. Sin importar el nivel de experiencia del jugador, siempre habrá 
 tres pokémones clásicos identificables: Bulbasaur, Charmander y Squirtle, cada uno presentado junto a sus evoluciones, mostrando su imagen, breve descripción,
 características físicas, tales como peso y estatura, y su tipo (planta, bicho, fuego, agua, tierra, etc.) y este orden es lo que el jugador espera.
+Podemos inferir que de toda la data disponible, las siguientes nos permiten ofrecer una experiencia distinta al usuario: tasa de huida base, tasa de captura base, oportunidad de spawn, resistencia base (stamina), poder de combate y salud (máximo).
 
 ## 2. PERFIL DEL USUARIO
 
@@ -38,11 +39,19 @@ Son nativos digitales que destinan una parte importante de su tiempo al ocio y, 
 Para hacer una estimación, si un usuario utiliza un incienso para atraer pokémones, el efecto dura 1 hora; si el usuario deja un sebo en una pokeparada, 
 el efecto dura 30 minutos; las incursiones ocurren en momentos específicos del día y requieren pases especiales.
 En otras palabras, ser jugador de Pokémon Go exige disciplina para poder cumplir misiones, las cuales son premiadas con polvos estelares, pokebolas, bayas, 
-pociones, medicina para revivir, huevos, entre otros, lo que motiva al usuario a conectarse incluso varias veces en un solo día.
+pociones, medicina para revivir, huevos, entre otros, lo que motiva al usuario a conectarse incluso varias veces en un solo día: el usuario está pendiente 
+de su progreso en el juego y _la posibilidad de jugar en comunidad con sus amigos estimula su platea externa_, _lo cual también ayuda a mejorar su rendimiento_ 
+_en el juego_.
 
 ![json-interfaz](https://i.imgur.com/KmQbvi6.png)
 
 * **¿Cuáles son los objetivos de estos usuarios en relación con el producto?**
+Queremos que nuestros potenciales usuarios confíen en nuestra aplicación y sientan que junto a ella pueden mejorar su rendimiento en el juego.
+La confianza es primordial, considerando que una gran cantidad de aplicaciones relacionadas a Pokémon Go pueden terminar en el baneo de sus cuentas, 
+al hacer uso de data que se considera "tramposa". Para ello, la implementación de la identidad gráfica es primordial.
+Nuestro usuario es analítico y quiere hacer comparaciones entre pokémones, desea comprender la jerarquía entre ellos y apreciar sus características, 
+para hacer uso de esa data cuando tenga la posibilidad de ingresar al juego.
+
 * **¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?**
 Al momento de jugar Pokémon Go, nos damos cuenta de que en el momento de que un pokémon es capturado se despliega una ficha informativa, siendo aquella que gana en jerarquía el **Poder de Combate**. Esta información está sobre la imagen principal de cada pokémon. En nuestra encuesta, esto se corrobora, ya que es el dato más 
 requerido por los jugadores:
@@ -57,6 +66,7 @@ En otras palabras, utilizar una gama de colores que va desde matices de verde al
 Esto también afectaría las tonalidades a usar respecto a la presentación de las fichas de cada pokémon, ya que la pokédex para Kanto usa tonos azules y la 
 pokédex de Johto, variedades de lila.
 A continuación dejamos otros datos obtenidos que hemos considerado al momento de prototipar:
+
 ![json-interfaz](https://i.imgur.com/5FTcmL6.png)
 
 ![json-interfaz](https://i.imgur.com/LOym78I.png)
@@ -88,24 +98,26 @@ A raíz de nuestra investigación, decidimos priorizar las siguientes Historias 
 3. "Yo como jugador de PG, quiero saber cuáles son las chances de spawn de un pokémon, para priorizar las capturas".
 4. "Yo como jugador de PG, quiero conocer la tasa de captura base de un pokémon, para optimizar mis recursos (pokeballs, bayas, inciensos, etc.)"
 
-  ## 4. PROTOTIPOS
+## 4. PROTOTIPOS
 
-  ### 4.1 Prototipo de Baja Fidelidad
+### 4.1 Prototipo de Baja Fidelidad
 
 * **Versión Desktop**
-  ![json-interfaz](https://i.imgur.com/r8NoKx2.jpg)
 
-  ![json-interfaz](https://i.imgur.com/unwTr39.jpg)
+![json-interfaz](https://i.imgur.com/r8NoKx2.jpg)
 
-  ![json-interfaz](https://i.imgur.com/kvzPGrG.jpg)
+![json-interfaz](https://i.imgur.com/unwTr39.jpg)
+
+![json-interfaz](https://i.imgur.com/kvzPGrG.jpg)
 
 * **Versión Mobile**
-  ![json-interfaz](https://i.imgur.com/YEuo2pa.jpg)
 
-  ![json-interfaz](https://i.imgur.com/78NErBq.jpg)
+![json-interfaz](https://i.imgur.com/YEuo2pa.jpg)
 
-  ![json-interfaz](https://i.imgur.com/w08CWMG.jpg)
+![json-interfaz](https://i.imgur.com/78NErBq.jpg)
 
-  ### 4.2 Prototipo de Alta Fidelidad
+![json-interfaz](https://i.imgur.com/w08CWMG.jpg)
 
-  ## 5. IMAGEN FINAL DEL PROYECTO
+### 4.2 Prototipo de Alta Fidelidad
+
+## 5. IMAGEN FINAL DEL PROYECTO
