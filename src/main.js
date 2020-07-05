@@ -1,5 +1,4 @@
-import pokemon from "./data/pokemon/pokemon.js";
-console.log(pokemon);
+import data from "./data/pokemon/pokemon.js";
 
 
 // MOSTRAR PÁGINA POKÉDEX
@@ -16,3 +15,5 @@ document.querySelector(".toggle-btn").addEventListener("click", showSidebar);
 function showSidebar(){
     document.getElementById("sidebar").classList.toggle("active");
 }
+const allPokemonData = Object.values(data);
+console.log(allPokemonData);

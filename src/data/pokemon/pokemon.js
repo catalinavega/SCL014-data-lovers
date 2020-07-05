@@ -23950,4 +23950,4 @@ export default {
       "candy": "celebi candy"
     }
   }]
-};
+}
