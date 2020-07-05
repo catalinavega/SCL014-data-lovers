@@ -1,7 +1,6 @@
-// import { example } from './data.js';
-// // import data from './data/atletas/atletas.js';
-// // import data from './data/lol/lol.js';
-// import data from './data/pokemon/pokemon.js';
+import pokemon from "./data/pokemon/pokemon.js";
+console.log(pokemon);
+
 
 // MOSTRAR PÁGINA POKÉDEX
 document.getElementById("firstButton").addEventListener("click", hideAndShow);
