@@ -29,6 +29,7 @@ Podemos inferir que de toda la data disponible, las siguientes nos permiten ofre
 ## 2. PERFIL DEL USUARIO
 
 * **¿Quiénes son los principales usuarios de producto?** 
+
 La recabación de datos se realizó mediante _Google Forms_.
 El rango etario de los usuarios que respondieron a nuestra encuesta va de los 19 a los 35 años, de los cuales el 66% está entre los 19 y 25 años.
 En su mayoría viven con su familia, son de clase media, dada la situación actual muchos de ellos se encuentran desempleados o estudiando remoto.
@@ -40,12 +41,12 @@ Para hacer una estimación, si un usuario utiliza un incienso para atraer pokém
 el efecto dura 30 minutos; las incursiones ocurren en momentos específicos del día y requieren pases especiales.
 En otras palabras, ser jugador de Pokémon Go exige disciplina para poder cumplir misiones, las cuales son premiadas con polvos estelares, pokebolas, bayas, 
 pociones, medicina para revivir, huevos, entre otros, lo que motiva al usuario a conectarse incluso varias veces en un solo día: el usuario está pendiente 
-de su progreso en el juego y _la posibilidad de jugar en comunidad con sus amigos estimula su platea externa_, _lo cual también ayuda a mejorar su rendimiento_ 
-_en el juego_.
+de su progreso en el juego y ***la posibilidad de jugar en comunidad con sus amigos estimula su platea externa,*** ***lo cual también ayuda a mejorar su rendimiento*** ***en el juego.***
 
 ![json-interfaz](https://i.imgur.com/KmQbvi6.png)
 
 * **¿Cuáles son los objetivos de estos usuarios en relación con el producto?**
+
 Queremos que nuestros potenciales usuarios confíen en nuestra aplicación y sientan que junto a ella pueden mejorar su rendimiento en el juego.
 La confianza es primordial, considerando que una gran cantidad de aplicaciones relacionadas a Pokémon Go pueden terminar en el baneo de sus cuentas, 
 al hacer uso de data que se considera "tramposa". Para ello, la implementación de la identidad gráfica es primordial.
@@ -53,6 +54,7 @@ Nuestro usuario es analítico y quiere hacer comparaciones entre pokémones, des
 para hacer uso de esa data cuando tenga la posibilidad de ingresar al juego.
 
 * **¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?**
+
 Al momento de jugar Pokémon Go, nos damos cuenta de que en el momento de que un pokémon es capturado se despliega una ficha informativa, siendo aquella que gana en jerarquía el **Poder de Combate**. Esta información está sobre la imagen principal de cada pokémon. En nuestra encuesta, esto se corrobora, ya que es el dato más 
 requerido por los jugadores:
 
@@ -61,6 +63,7 @@ requerido por los jugadores:
 ![json-interfaz](https://i.imgur.com/8bP09Rp.png)
 
 * **¿Qué tipo de interfaz les gustaría a nuestros usuarios?**
+
 De forma casi unánime, nuestros potenciales usuarios mencionaron que les gustaría una app que utilice los colores y que tenga la identidad gráfica del juego. 
 En otras palabras, utilizar una gama de colores que va desde matices de verde al azul petróleo, ya que les da más confianza. 
 Esto también afectaría las tonalidades a usar respecto a la presentación de las fichas de cada pokémon, ya que la pokédex para Kanto usa tonos azules y la 
@@ -75,28 +78,30 @@ A continuación dejamos otros datos obtenidos que hemos considerado al momento d
 
 
 * **¿Cuándo utilizan o utilizarían el producto?**
+
 Nuestros potenciales usuarios harían uso de "Pokémon Go: Pokédex" en tiempos intermedios de ocio con fin de complementar sus conocimientos técnicos de Pokémon, 
 pudiendo filtrar la información en orden ascendente o descendente, de modo que los guíe a determinar cuál de sus Pokémon capturados será más útil en 
 una incursión (raid), cuáles les faltan para completar la Pokédex, qué Pokémon resistirá mejor en un gimnasio o en algún encuentro con el equipo Rocket 
 en alguna de las pokeparadas.
 
 * **Feedback adicional de los usuarios**
+
 Dejamos a continuación algunos de los comentarios adicionales que recibimos de nuestros potenciales usuarios, esto a considerar para futuras mejoras 
 al producto final y nuevas historias de usuario:
 
-- "Me gustaría más información sobre la probabilidad de aparición variocolor de cada Pokémon" (en referencia al spawn de Pokémon Shiny)
-- "Que haya más información sobre los ataques de los pokémones"
-- "Que no ocupe mucha memoria en el celular"
-- "Mejores ataques de los pokémon y si conviene o no agregar 2do ataque"
+1. "Me gustaría más información sobre la probabilidad de aparición variocolor de cada Pokémon" (en referencia al spawn de Pokémon Shiny)
+2. "Que haya más información sobre los ataques de los pokémones"
+3. "Que no ocupe mucha memoria en el celular"
+4. "Mostrar los mejores ataques de los pokémon y si conviene o no agregar 2do ataque"
 
 ## 3. HISTORIAS DE USUARIO
 
 A raíz de nuestra investigación, decidimos priorizar las siguientes Historias de Usuario:
 
-1. "Yo como jugador de PG, quiero visualizar los 251 pokémon por el orden designado en la pokedex, para saber cuáles me faltan".
-2. "Yo como jugador de PG, quiero conocer el poder de combate de un pokémon, para competir en gimnasios e incursiones".
-3. "Yo como jugador de PG, quiero saber cuáles son las chances de spawn de un pokémon, para priorizar las capturas".
-4. "Yo como jugador de PG, quiero conocer la tasa de captura base de un pokémon, para optimizar mis recursos (pokeballs, bayas, inciensos, etc.)"
+1. _"Yo como jugador de PG, quiero visualizar los 251 pokémon por el orden designado en la pokedex, para saber cuáles me faltan"._
+2. _"Yo como jugador de PG, quiero conocer el poder de combate de un pokémon, para competir en gimnasios e incursiones"._
+3. _"Yo como jugador de PG, quiero saber cuáles son las chances de spawn de un pokémon, para priorizar las capturas"._
+4. _"Yo como jugador de PG, quiero conocer la tasa de captura base de un pokémon, para optimizar mis recursos (pokeballs, bayas, inciensos, etc.)"_
 
 ## 4. PROTOTIPOS
 
