@@ -15,5 +15,5 @@ document.querySelector(".toggle-btn").addEventListener("click", showSidebar);
 function showSidebar(){
     document.getElementById("sidebar").classList.toggle("active");
 }
-const allPokemonData = Object.values(data);
-console.log(allPokemonData);
+
+console.log(data.pokemon[0].name);
