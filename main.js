@@ -7,7 +7,6 @@ document.getElementById("firstButton").addEventListener("click", hideAndShow);
 
 function hideAndShow(){
     document.getElementById("firstPage").classList.add("hidden");
-    document.getElementById("menu").classList.remove("hidden");
     document.getElementById("secondPage").classList.remove("hidden");
 }
 
