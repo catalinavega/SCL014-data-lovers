@@ -123,3 +123,37 @@
     border-radius: 100px;
     font-family: 'Roboto', sans-serif;
 }
+
+#secondPage {
+    background-color: #F1F1F1;
+    margin: 0% 16% 0% 16%;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+#kantoCard {
+    background-image: linear-gradient(to bottom, #D1DBFE, #C6D4FD, #BBCEFB, #AFC7FA, #A2C1F8);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#johtoCard {
+    background-image: linear-gradient(to bottom, #BDCBFC, #B7C8FB, #B0C6FA, #A9C3F9, #A2C1F8);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
