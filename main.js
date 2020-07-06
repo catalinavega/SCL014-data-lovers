@@ -1,5 +1,13 @@
 import data from "./data/pokemon/pokemon.js";
 
+/* FUNCIÓN PARA TRAER INFO */
+function showPokemonData(){
+    for(let i = 0; i < data.pokemon.length ; i++){
+    console.log(data.pokemon[i].name);
+    }
+};
+
+showPokemonData();
 
 // MOSTRAR PÁGINA POKÉDEX
 document.getElementById("firstButton").addEventListener("click", hideAndShow);
@@ -16,4 +24,5 @@ function showSidebar(){
     document.getElementById("sidebar").classList.toggle("active");
 }
 
-console.log(data.pokemon[0].name);
+
+
