@@ -8,6 +8,8 @@
   </head>
   <body>
 
+    <header class="header">
+      <img class="pokemonLogoWhite" src="img/pokemon-logo-bw.png">
     <!-- MENÚ DESPLEGABLE -->
     <div id="sidebar">
       <div id="menuButton" class="toggle-btn">
@@ -23,11 +25,13 @@
             <li><a href="#">Eventos</a></li>
             <li><a href="#">Noticias</a></li>
             <li><a href="#">Contacto</a></li>
-            <li><input placeholder="Buscar..."></li>
+            <li><input type="text" class="searchBar" placeholder="Buscar..."></li>
           </ul>
         </div>
     </div>
-  
+      
+    </header>
+
     <!-- PRIMERA PÁGINA: BIENVENIDA USUARIO -->
     <div id="firstPage" class="screen1">
       <div class="welcome">
@@ -46,8 +50,10 @@
     <!-- SEGUNDA PÁGINA: POKEDEX DESPLEGADA -->
     <div id="secondPage" class="screen2 hidden">
       <div>
-        <select class="filter">
+        <select class="selectFilter">
           <option>Ordenar A-Z</option>
+          <option>Ordenar Z-A</option>
+          <option>Ordenar Poder de Combate</option>
         </select>
       </div>
 
