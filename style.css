@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -37,7 +38,7 @@
     cursor: pointer;
 }
 
-#sidebar.active {
+#sidebar.active{
     left: 0;
 }
 
@@ -80,15 +81,16 @@
     height: auto;
 }
 
+
 #menuPokeball {
     max-width: 100px;
 }
 
 .screen1 {
     background-image: linear-gradient(to bottom, #24CCAA, #57D1A4, #76D59F, #91D99C, #A8DD9C);
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
     min-width: 100%;
     min-height: 100%;
 }
@@ -116,9 +118,9 @@
 }
 
 .loginContainer {
-    display: flex;
+    display: flex; 
     flex-direction: column;
-    align-content: center;
+    align-self: center;
     background-color: #f1ffef6e;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -126,23 +128,21 @@
     padding-left: 25px;
     margin-top: 30px;
     border-radius: 10px;
+    width: 20%;
 }
 
-.label {
+.label{
     margin-top: 40px;
     margin-left: 10px;
     font-size: 20px;
-    display: inline-block;
 }
 
-.username,
-.password {
+.username, .password {
     width: 80%;
     height: 15px;
     font-size: 20px;
     padding: 15px;
     margin-left: 10px;
-    margin-right: 10px;
     margin-top: 10px;
     font-family: 'Roboto', sans-serif;
     background: #f1ffef;
@@ -157,14 +157,12 @@
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 8px;
-    margin-right: 8px;
     background: linear-gradient(180deg, #A8DD9C 0%, #24CCAA 100%);
     color: white;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    display: auto;
 }
 
 #secondPage {
@@ -178,8 +176,7 @@
     width: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 33px;
-    ;
+    margin-left: 33px;;
     background-image: linear-gradient(to bottom, #a8dd9c, #91d99c, #76d59f, #57d1a4, #24ccaa);
     border-radius: 10px;
     border: none;
