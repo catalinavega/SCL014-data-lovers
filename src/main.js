@@ -53,3 +53,4 @@ console.log(pokemonNames.sort());
 let selectFilter = document.querySelector(".selectFilter");
 selectFilter.addEventListener("change", selectOption);
 
+ 
