@@ -1,69 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
 
     <header class="header">
-      <img class="pokemonLogoWhite" src="img/pokemon-logo-bw.png">
-    <!-- MENÚ DESPLEGABLE -->
-    <div id="sidebar">
-      <div id="menuButton" class="toggle-btn">
-        <span>&#9776;</span>
-      </div>
-      <div>
-          <ul>
-            <li>
-              <img id="menuPokeball" src="img/pokeball.png">
-            </li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Pokédex</a></li>
-            <li><a href="#">Eventos</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><input type="text" class="searchBar" placeholder="Buscar..."></li>
-          </ul>
+        <img class="pokemonLogoWhite" src="img/pokemon-logo-bw.png">
+        <!-- MENÚ DESPLEGABLE -->
+        <div id="sidebar">
+            <div id="menuButton" class="toggle-btn">
+                <span>&#9776;</span>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <img id="menuPokeball" src="img/pokeball.png">
+                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pokédex</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><input type="text" class="searchBar" placeholder="Buscar..."></li>
+                </ul>
+            </div>
         </div>
-    </div>
-      
+
     </header>
 
     <!-- PRIMERA PÁGINA: BIENVENIDA USUARIO -->
     <div id="firstPage" class="screen1">
-      <div class="welcome">
-        <h1 class="welcomeToPokedex">¡Bienvenido a tu Pokédex!</h1>
-        <img class="pgLogo" src="img/Logo_Pokémon_GO.png">
-          <div class="loginContainer">
-            <label class="label">Nombre de Usuario</label>
-            <input class="username" type="text"  placeholder="Escribir acá...">
-            <label class="label">Password</label>
-            <input class="password" type="password"  placeholder="*********">
-            <button id="firstButton" class="sendInfo" type="button">Ir a mi Pokédex</button>
-          </div>
-      </div>
+        <div class="welcome">
+            <h1 class="welcomeToPokedex">¡Bienvenido a tu Pokédex!</h1>
+            <img class="pgLogo" src="img/Logo_Pokémon_GO.png">
+            <div class="loginContainer">
+                <label class="label">Nombre de Usuario</label>
+                <input class="username" type="text" placeholder="Escribir acá...">
+                <label class="label">Password</label>
+                <input class="password" type="password" placeholder="*********">
+                <button id="firstButton" class="sendInfo" type="button">Ir a mi Pokédex</button>
+            </div>
+        </div>
     </div>
 
     <!-- SEGUNDA PÁGINA: POKEDEX DESPLEGADA -->
     <div id="secondPage" class="screen2 hidden">
-      <div>
-        <select class="selectFilter">
-          <option>Ordenar</option>
-          <option id="aToZ" class="aToZ">Ordenar A-Z</option>
-          <option id="zToA" class="zToA">Ordenar Z-A</option>
+        <div>
+            <select id="selectFilter" class="selectFilter">
+          <option>Ordenar por...</option>
+          <option value="aToZ">Ordenar A-Z</option>
+          <option value="zToA">Ordenar Z-A</option>
         </select>
-      </div>
+        </div>
 
-      <!-- DIV DE CARTAS -->
-      <div id="allCards" class="allCards">
-      </div>
-    
+        <!-- DIV DE CARTAS -->
+        <div id="allCards" class="allCards">
+        </div>
+
     </div>
 
     <div id="root"></div>
     <script src="main.js" type="module"></script>
-  </body>
+</body>
+
 </html>
