@@ -9,9 +9,8 @@
 </head>
 
 <body>
-
     <header class="header">
-        <img class="pokemonLogoWhite" src="img/pokemon-logo-bw.png">
+        <h1 class="pokemonPokedexTitle">Pokémon Go: Pokédex</h1>
         <!-- MENÚ DESPLEGABLE -->
         <div id="sidebar">
             <div id="menuButton" class="toggle-btn">
@@ -37,13 +36,17 @@
     <!-- PRIMERA PÁGINA: BIENVENIDA USUARIO -->
     <div id="firstPage" class="screen1">
         <div class="welcome">
-            <h1 class="welcomeToPokedex">¡Bienvenido a tu Pokédex!</h1>
-            <img class="pgLogo" src="img/Logo_Pokémon_GO.png">
             <div class="loginContainer">
-                <label class="label">Nombre de Usuario</label>
-                <input class="username" type="text" placeholder="Escribir acá...">
-                <label class="label">Password</label>
-                <input class="password" type="password" placeholder="*********">
+                <img class="pgLogo" src="img/Logo_Pokémon_GO.png">
+                <p class="welcomeToPokedex">INGRESA A TU POKÉDEX:</p>
+                <div class="inputContainer">
+                    <img id="loginIcon" src="img/login.png">
+                    <input class="username" type="text" placeholder="Usuario">
+                </div>
+                <div class="inputContainer">
+                    <img id="lockIcon" src="img/candado.png">
+                    <input class="password" type="password" placeholder="Contraseña">
+                </div>
                 <button id="firstButton" class="sendInfo" type="button">Ir a mi Pokédex</button>
             </div>
         </div>
