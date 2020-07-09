@@ -47,27 +47,45 @@ showPokemonData(allPokemon);
 
 document.getElementById("selectFilter").addEventListener("change", filters);
 
-// Ordenar Alfabéticamente
+// Ordenar según el filtro seleccionado
 function filters() {
     const selectFilter = document.getElementById("selectFilter");
-    const orderAlphabet = selectFilter.value;
-    const aToZ = allPokemon.sort(orderItems);
+    const order = selectFilter.value;
+    const aToZ = allPokemon.sort(orderItemsByName);
+    const numberAsc = allPokemon.sort(orderItemsByNum);
 
-    if (orderAlphabet === 'aToZ') {
+    if (order === 'aToZ') {
         document.getElementById('allCards').innerHTML = '';
         showPokemonData(aToZ);
-    } else if (orderAlphabet === 'zToA') {
+    } else if (order === 'zToA') {
         document.getElementById('allCards').innerHTML = '';
         const zToA = aToZ.reverse();
         showPokemonData(zToA);
+    } else if (order === 'numberAsc') {
+        document.getElementById('allCards').innerHTML = '';
+        showPokemonData(numberAsc);
+    } else if (order === 'numberDesc') {
+        document.getElementById('allCards').innerHTML = '';
+        const numberDesc = numberAsc.reverse();
+        showPokemonData(numberDesc);
     }
 };
 
-function orderItems(a, b) {
+function orderItemsByName(a, b) {
     if (a.name < b.name) {
         return -1;
     }
     if (a.name > b.name) {
+        return 1;
+    }
+    return 0;
+};
+
+function orderItemsByNum(a, b) {
+    if (a.num < b.num) {
+        return -1;
+    }
+    if (a.num > b.num) {
         return 1;
     }
     return 0;
