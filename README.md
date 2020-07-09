@@ -66,8 +66,8 @@ requerido por los jugadores:
 
 De forma casi unánime, nuestros potenciales usuarios mencionaron que les gustaría una app que utilice los colores y que tenga la identidad gráfica del juego. 
 En otras palabras, utilizar una gama de colores que va desde matices de verde al azul petróleo, ya que les da más confianza. 
-Esto también afectaría las tonalidades a usar respecto a la presentación de las fichas de cada pokémon, ya que la pokédex para Kanto usa tonos azules y la 
-pokédex de Johto, variedades de lila.
+Esto también afectaría las tonalidades a usar respecto a la presentación de las fichas de cada pokémon, ya que la pokédex para Kanto usa tonos lila y la 
+pokédex de Johto, matices de azul.
 A continuación dejamos otros datos obtenidos que hemos considerado al momento de prototipar:
 
 ![json-interfaz](https://i.imgur.com/5FTcmL6.png)
