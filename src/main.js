@@ -1,5 +1,6 @@
 import data from "./data/pokemon/pokemon.js";
 
+// Variable que recoje todo el array
 const allPokemon = data.pokemon;
 
 document.getElementById("firstButton").addEventListener("click", hideAndShow);
@@ -44,9 +45,24 @@ const showPokemonData = (data) => {
 
 showPokemonData(allPokemon);
 
-document.getElementById("selectFilter").addEventListener("change", ascAlphabetically);
+document.getElementById("selectFilter").addEventListener("change", filters);
 
-// FUNCION QUE ORDENA
+// Ordenar Alfabéticamente
+function filters() {
+    const selectFilter = document.getElementById("selectFilter");
+    const orderAlphabet = selectFilter.value;
+    const aToZ = allPokemon.sort(orderItems);
+
+    if (orderAlphabet === 'aToZ') {
+        document.getElementById('allCards').innerHTML = '';
+        showPokemonData(aToZ);
+    } else if (orderAlphabet === 'zToA') {
+        document.getElementById('allCards').innerHTML = '';
+        const zToA = aToZ.reverse();
+        showPokemonData(zToA);
+    }
+};
+
 function orderItems(a, b) {
     if (a.name < b.name) {
         return -1;
@@ -55,11 +71,4 @@ function orderItems(a, b) {
         return 1;
     }
     return 0;
-};
-
-function ascAlphabetically() {
-    const aToZ = allPokemon.sort(orderItems);
-    document.getElementById('allCards').innerHTML = '';
-    showPokemonData(aToZ);
-    console.log(aToZ.reverse());
 };
