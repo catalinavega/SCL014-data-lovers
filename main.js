@@ -23,21 +23,22 @@ let allCards = document.querySelector("#allCards");
 // FUNCIÓN PARA MOSTRAR A LOS POKEMON
 const showPokemonData = (data) => {
     let infoPokemon = '';
-    for (let i = 0; i < data.length; i++) {
+    for (const pokemon in data) {
         let card = document.createElement("div");
         // Condicionar el color de fondo de la tarjeta según la generación
-        if (data[i].generation.name === 'kanto') {
+        if (data[pokemon].generation.name === 'kanto') {
             card.setAttribute("class", "kantoCard");
         } else {
             card.setAttribute("class", "johtoCard");
         };
+
         // Usar template strings
         infoPokemon = `
-                    <p id="pokemonCp"><small>PC</small> ${data[i].stats['max-cp']}</p>
-                    <img id="pokemonImage"src="${data[i].img}">
-                    <p id="pokemonNum">#${data[i].num}</p>
-                    <p id="pokemonName">${data[i].name.toUpperCase()}</p>
-                    <p id="pokemonType">${data[i].type}</p>`
+                    <p id="pokemonCp"><small>PC</small> ${data[pokemon].stats['max-cp']}</p>
+                    <img id="pokemonImage"src="${data[pokemon].img}">
+                    <p id="pokemonNum">#${data[pokemon].num}</p>
+                    <p id="pokemonName">${data[pokemon].name.toUpperCase()}</p>
+                    <p id="pokemonType">${data[pokemon].type}</p>`
             // Crear un hijo de allCards
         allCards.appendChild(card);
         card.innerHTML = infoPokemon;
@@ -46,12 +47,12 @@ const showPokemonData = (data) => {
 
 showPokemonData(allPokemon);
 
-document.getElementById("selectFilter").addEventListener("change", filters);
+document.getElementById("chooseOrder").addEventListener("change", chooseOrder);
 
 // Ordenar según el filtro seleccionado
-function filters() {
-    const selectFilter = document.getElementById("selectFilter");
-    const order = selectFilter.value;
+function chooseOrder() {
+    const chooseOrder = document.getElementById("chooseOrder");
+    const order = chooseOrder.value;
 
     if (order === 'aToZ') {
         document.getElementById('allCards').innerHTML = '';
@@ -108,4 +109,13 @@ function orderItemsByPC(a, b) {
         return 1;
     }
     return 0;
+};
+
+document.getElementById("chooseType").addEventListener("change", filterTypes);
+
+function filterTypes() {
+    let pokemonType = document.getElementById("chooseType").value;
+    let selectedPokemon = allPokemon.filter(pokemon => pokemon.type.includes(pokemonType));
+    document.getElementById('allCards').innerHTML = '';
+    showPokemonData(selectedPokemon);
 };
