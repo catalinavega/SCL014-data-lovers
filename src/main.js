@@ -33,7 +33,7 @@ const showPokemonData = (data) => {
         };
         // Usar template strings
         infoPokemon = `
-                    <p id="pokemonCp">Max PC ${data[i].stats['max-cp']}</p>
+                    <p id="pokemonCp">PC ${data[i].stats['max-cp']}</p>
                     <img id="pokemonImage"src="${data[i].img}">
                     <p id="pokemonNum">#${data[i].num}</p>
                     <p id="pokemonName">${data[i].name}</p>
