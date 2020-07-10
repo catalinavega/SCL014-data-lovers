@@ -33,10 +33,10 @@ const showPokemonData = (data) => {
         };
         // Usar template strings
         infoPokemon = `
-                    <p id="pokemonCp">PC ${data[i].stats['max-cp']}</p>
+                    <p id="pokemonCp"><small>PC</small> ${data[i].stats['max-cp']}</p>
                     <img id="pokemonImage"src="${data[i].img}">
                     <p id="pokemonNum">#${data[i].num}</p>
-                    <p id="pokemonName">${data[i].name}</p>
+                    <p id="pokemonName">${data[i].name.toUpperCase()}</p>
                     <p id="pokemonType">${data[i].type}</p>`
             // Crear un hijo de allCards
         allCards.appendChild(card);

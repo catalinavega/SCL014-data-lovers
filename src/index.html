@@ -10,7 +10,24 @@
 
 <body>
     <header class="header">
-        <h1 class="pokemonPokedexTitle">Pokémon Go: Pokédex</h1>
+        <div class="titleContainer">
+            <p class="pokemonPokedexTitle">POKÉMON GO: POKÉDEX</p>
+        </div>
+        <div class="navBar">
+            <select id="selectFilter" class="selectFilter">
+                <option value disabled selected>Ordenar por...</option>
+                <option value="aToZ">A-Z</option>
+                <option value="zToA">Z-A</option>
+                <option value="numberAsc">N° más bajo (primero)</option>
+                <option value="numberDesc">N° más alto (primero)</option>
+                <option value="pcAsc">Mínimo PC primero</option>
+                <option value="pcDesc">Máximo PC primero</option>
+            </select>
+            <div class="searchInput">
+                <input type="text" class="searchBar" placeholder="Buscar...">
+            </div>
+        </div>
+
         <!-- MENÚ DESPLEGABLE -->
         <div id="sidebar">
             <div id="menuButton" class="toggle-btn">
@@ -26,7 +43,6 @@
                     <li><a href="#">Eventos</a></li>
                     <li><a href="#">Noticias</a></li>
                     <li><a href="#">Contacto</a></li>
-                    <li><input type="text" class="searchBar" placeholder="Buscar..."></li>
                 </ul>
             </div>
         </div>
@@ -54,18 +70,6 @@
 
     <!-- SEGUNDA PÁGINA: POKEDEX DESPLEGADA -->
     <div id="secondPage" class="screen2 hidden">
-        <div>
-            <select id="selectFilter" class="selectFilter">
-                <option value disabled selected>Ordenar por...</option>
-                <option value="aToZ">Ordenar A-Z</option>
-                <option value="zToA">Ordenar Z-A</option>
-                <option value="numberAsc">Ordenar 001-251</option>
-                <option value="numberDesc">Ordenar 251-001</option>
-                <option value="pcAsc">Ordenar Min a Max PC</option>
-                <option value="pcDesc">Ordenar Max a Min PC</option>
-            </select>
-        </div>
-
         <!-- DIV DE CARTAS -->
         <div id="allCards" class="allCards">
         </div>
