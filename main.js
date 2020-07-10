@@ -33,6 +33,7 @@ const showPokemonData = (data) => {
         };
         // Usar template strings
         infoPokemon = `
+                    <p id="pokemonCp">Max PC ${data[i].stats['max-cp']}</p>
                     <img id="pokemonImage"src="${data[i].img}">
                     <p id="pokemonNum">#${data[i].num}</p>
                     <p id="pokemonName">${data[i].name}</p>
@@ -48,26 +49,35 @@ showPokemonData(allPokemon);
 document.getElementById("selectFilter").addEventListener("change", filters);
 
 // Ordenar según el filtro seleccionado
-function filters (){
+function filters() {
     const selectFilter = document.getElementById("selectFilter");
     const order = selectFilter.value;
 
     if (order === 'aToZ') {
         document.getElementById('allCards').innerHTML = '';
         showPokemonData(allPokemon.sort(orderItemsByName));
-    } 
+    }
     if (order === 'zToA') {
         document.getElementById('allCards').innerHTML = '';
         showPokemonData((allPokemon.sort(orderItemsByName)).reverse());
-    } 
+    }
     if (order === 'numberAsc') {
         document.getElementById('allCards').innerHTML = '';
         showPokemonData(allPokemon.sort(orderItemsByNum));
-    } 
+    }
     if (order === 'numberDesc') {
         document.getElementById('allCards').innerHTML = '';
         showPokemonData((allPokemon.sort(orderItemsByNum)).reverse());
     }
+    if (order === 'pcAsc') {
+        document.getElementById('allCards').innerHTML = '';
+        showPokemonData(allPokemon.sort(orderItemsByPC));
+    }
+    if (order === 'pcDesc') {
+        document.getElementById('allCards').innerHTML = '';
+        showPokemonData((allPokemon.sort(orderItemsByPC)).reverse());
+    }
+
 };
 
 function orderItemsByName(a, b) {
@@ -85,6 +95,16 @@ function orderItemsByNum(a, b) {
         return -1;
     }
     if (a.num > b.num) {
+        return 1;
+    }
+    return 0;
+};
+
+function orderItemsByPC(a, b) {
+    if (parseInt(a.stats['max-cp']) < parseInt(b.stats['max-cp'])) {
+        return -1;
+    }
+    if (parseInt(a.stats['max-cp']) > parseInt(b.stats['max-cp'])) {
         return 1;
     }
     return 0;
