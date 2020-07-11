@@ -14,7 +14,7 @@
 }
 
 body {
-    background: url(img/gplaypattern.png);
+    background: url(img/background-patterns/gplaypattern.png);
     background-repeat: repeat;
 }
 
@@ -25,7 +25,8 @@ body {
 .header {
     display: flex;
     flex-direction: column;
-    background-color: #C7C7C7;
+    /* background-color: #c7c7c7b9; */
+    background: linear-gradient(119.36deg, #52B888 0%, #266378 100%);
     height: auto;
 }
 
@@ -35,7 +36,7 @@ body {
 }
 
 .pokemonPokedexTitle {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: none;
     font-family: "Flexo Demi";
     color: white;
@@ -45,7 +46,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
     padding-left:20%;
     padding-right: 20%;
@@ -57,19 +58,15 @@ body {
     padding: 10px;
     width: 250px;
     margin-top: 20px;
-    margin-left: 33px;
     background-image: linear-gradient(to bottom, #a8dd9c, #91d99c, #76d59f, #57d1a4, #24ccaa);
     border-radius: 10px;
     border: none;
     color: white;
 }
 
-option:hover {
-    background-color: #a8dd9c
-}
 
 option {
-    color: #24CCAA;
+    color: rgb(95, 95, 95);
 }
 
 .searchInput {
@@ -80,8 +77,9 @@ option {
     height: 40px;
     border-radius: 10px;
     border: none;
+    padding: 5px;
     padding-left: 10px;
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Flexo Regular";
     width: 250px;
     margin-top: 20px;
@@ -111,11 +109,12 @@ option {
 
 #sidebar .toggle-btn span {
     display: block;
-    width: 40px;
+    width: 50px;
     text-align: center;
     font-style: bold;
-    font-size: 30px;
-    border: 3px solid rgb(41, 41, 41);
+    font-size: 40px;
+    border: 2px solid rgbrgb(95, 95, 95);
+    border-radius: 10px;;
     color: rgb(41, 41, 41);
     background-color: white;
 }
@@ -164,7 +163,7 @@ option {
     background-color: #f1ffef6e;
     font-family: "Flexo Regular";
     color: rgb(95, 95, 95);
-    margin-top: 30px;
+    margin-top: 45px;
     border-radius: 10px;
 }
 
@@ -228,7 +227,7 @@ option {
 }
 
 #secondPage {
-    background-color: #F1F1F1;
+    background-color: #ffffff;
     margin: 0% 20% 0% 20%;
     align-items: flex-start
 }
@@ -242,7 +241,6 @@ option {
 
 #pokemonImage {
     min-width: 200px;
-    justify-content: space-around;
 }
 
 .kantoCard {
@@ -277,11 +275,13 @@ option {
     text-align: center;
     font-weight: 500;
     padding-bottom: 10px;
+    color: rgb(95, 95, 95)
 }
 
 small {
     font-family: "Flexo Regular";
-    font-size: 18px;
+    font-size: 16px;
+    color: rgb(95, 95, 95);
 }
 
 #pokemonNum {
