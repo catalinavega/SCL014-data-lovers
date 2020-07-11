@@ -41,7 +41,7 @@ Para hacer una estimación, si un usuario utiliza un incienso para atraer pokém
 el efecto dura 30 minutos; las incursiones ocurren en momentos específicos del día y requieren pases especiales.
 En otras palabras, ser jugador de Pokémon Go exige disciplina para poder cumplir misiones, las cuales son premiadas con polvos estelares, pokebolas, bayas, 
 pociones, medicina para revivir, huevos, entre otros, lo que motiva al usuario a conectarse incluso varias veces en un solo día: el usuario está pendiente 
-de su progreso en el juego y ***la posibilidad de jugar en comunidad con sus amigos estimula su platea externa,*** ***lo cual también ayuda a mejorar su rendimiento*** ***en el juego.***
+de su progreso en el juego y ***la posibilidad de jugar en comunidad con sus amigos estimula su platea externa, lo cual también ayuda a mejorar su rendimiento*** ***en el juego.***
 
 ![json-interfaz](https://i.imgur.com/KmQbvi6.png)
 
@@ -80,9 +80,84 @@ A continuación dejamos otros datos obtenidos que hemos considerado al momento d
 * **¿Cuándo utilizan o utilizarían el producto?**
 
 Nuestros potenciales usuarios harían uso de "Pokémon Go: Pokédex" en tiempos intermedios de ocio con fin de complementar sus conocimientos técnicos de Pokémon, 
-pudiendo filtrar la información en orden ascendente o descendente, de modo que los guíe a determinar cuál de sus Pokémon capturados será más útil en 
-una incursión (raid), cuáles les faltan para completar la Pokédex, qué Pokémon resistirá mejor en un gimnasio o en algún encuentro con el equipo Rocket 
-en alguna de las pokeparadas.
+pudiendo ordenar la información en orden ascendente o descendente, filtrar por tipo de Pokémon, de modo que los guíe a determinar cuál de sus Pokémon capturados será más útil en una incursión (raid), cuáles les faltan para completar la Pokédex, qué Pokémon resistirá mejor en un gimnasio o en algún encuentro con el equipo Rocket en alguna de las pokeparadas.
+
+## 3. HISTORIAS DE USUARIO
+
+A raíz de nuestra investigación, decidimos priorizar las siguientes Historias de Usuario:
+
+**HU1.** _"Yo como jugador de PG, quiero visualizar los 251 pokémon por el orden designado en la pokédex, para saber cuáles me faltan"._
+
+C.A.:
+- El usuario puede ver los 251 pokémon desde el inicio
+- Los 251 pokémon están ordenados (primero Kanto, luego Johto)
+- Cada pokémon tiene su número, nombre, imagen y tipo identificado en la ficha visible
+- El color de fondo de los pokémon corresponde también a la pokédex de la generación a la cual pertenecen
+
+D.T.: 
+- Se respeta el diseño de prototipado
+- El diseño está hecho con flexbox
+- Se está trabajando con selectores de clase en CSS
+- Se utiliza html semántico
+- Se utiliza html dinámico
+- El código ha sido hecho en pair-programming
+- El código está utilizando arrays y objects
+- Se implementa función para mostrar a los 251 pokémon
+- El código está en el repositorio actualizado
+
+**HU2** _"Yo como jugador de PG, quiero conocer el poder de combate de un pokémon, para competir en gimnasios e incursiones"._
+
+C.A.:
+- Cada Pokémon tiene visible su máximo PC en la ficha
+- El usuario puede ordenar los pokémon según su poder de combate (ascendente)
+- El usuario puede ordenar los pokémon según su poder de combate (descendente)
+
+D.T.:
+- Se respeta el diseño de prototipado
+- Se utiliza html semántico
+- Se utiliza html dinámico
+- Se trabaja en pair-programming
+- El código utiliza arrays (sort, reverse) y objects
+- El código está actualizado en el repositorio
+- Se implementa función para ordenar a los 251 pokémon según PC
+
+3. _"Yo como jugador de PG, quiero clickear en las fichas y que se den vuelta como cartas para ver la información adicional de cada pokémon"._
+
+C.A.:
+- Cuando el usuario elige a un Pokémon, la ficha se da vuelta como una carta y muestra información adicional
+- La transición del giro de la ficha es suave
+- El color del reverso es el mismo que el frontal (correspondiente a cada generación)
+
+D.T.:
+- Se respeta el diseño de prototipado
+- Se utiliza html semántico
+- Se utiliza html dinámico
+- Se trabaja en pair-programming
+- La transición se crea con CSS en stylesheet
+- El código está actualizado en el repositorio
+- Se implementa función para obtener la información adicional de cada pokémon
+- El código está en el repositorio actualizado
+- Se realiza test de usabilidad al menos a 5 usuarios
+
+4. _"Yo como jugador de PG, quiero saber cuáles son las chances de spawn de un pokémon, para priorizar las capturas"._
+
+C.A.:
+D.T.:
+
+5. _"Yo como jugador de PG, quiero conocer la tasa de captura base de un pokémon, para optimizar mis recursos (pokeballs, bayas, inciensos, etc.)"_
+
+C.A.:
+D.T.:
+
+* **Planificación**
+
+Link a Trello: https://trello.com/b/qhvhu0vq/data-lovers
+
+* **Adicional a Historias de Usuario**
+
+A) Para proveer una navegación personalizada, hemos creado una sección de login al momento de ingresar a la aplicación, solicitando un username y password.
+B) Se crearon opciones para que el usuario pueda organizar la Pokédex con los siguientes criterios: A-Z, Z-A, n° menor (primero), n° mayor (primero).
+C) Se crean filtros para que el usuario pueda elegir un tipo de Pokémon específico y la Pokédex retorne solo aquellos que cumplan con la condición.
 
 * **Feedback adicional de los usuarios**
 
@@ -94,14 +169,6 @@ al producto final y nuevas historias de usuario:
 3. "Que no ocupe mucha memoria en el celular"
 4. "Mostrar los mejores ataques de los pokémon y si conviene o no agregar 2do ataque"
 
-## 3. HISTORIAS DE USUARIO
-
-A raíz de nuestra investigación, decidimos priorizar las siguientes Historias de Usuario:
-
-1. _"Yo como jugador de PG, quiero visualizar los 251 pokémon por el orden designado en la pokedex, para saber cuáles me faltan"._
-2. _"Yo como jugador de PG, quiero conocer el poder de combate de un pokémon, para competir en gimnasios e incursiones"._
-3. _"Yo como jugador de PG, quiero saber cuáles son las chances de spawn de un pokémon, para priorizar las capturas"._
-4. _"Yo como jugador de PG, quiero conocer la tasa de captura base de un pokémon, para optimizar mis recursos (pokeballs, bayas, inciensos, etc.)"_
 
 ## 4. PROTOTIPOS
 

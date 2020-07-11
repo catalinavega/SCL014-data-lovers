@@ -1,8 +1,9 @@
 import data from "./data/pokemon/pokemon.js";
 
-// Variable que recoje todo el array
+//VARIABLE QUE LLAMA A TODA LA DATA
 const allPokemon = data.pokemon;
 
+//PASAR DE PÁG. DE LOGIN A PÁG. DE POKÉDEX
 document.getElementById("firstButton").addEventListener("click", hideAndShow);
 
 function hideAndShow() {
@@ -17,10 +18,10 @@ function showSidebar() {
     document.getElementById("sidebar").classList.toggle("active");
 };
 
-/* VARIABLE PARA LLAMAR AL SELECTOR DE CLASE #allCards*/
+// VARIABLE PARA LLAMAR AL SELECTOR DE CLASE #allCards
 let allCards = document.querySelector("#allCards");
 
-// FUNCIÓN PARA MOSTRAR A LOS POKEMON
+//FUNCIÓN PARA MOSTRAR A LOS POKEMON
 const showPokemonData = (data) => {
     let infoPokemon = '';
     for (const pokemon in data) {
@@ -34,12 +35,12 @@ const showPokemonData = (data) => {
 
         // Usar template strings
         infoPokemon = `
-                    <p id="pokemonCp"><small>PC</small> ${data[pokemon].stats['max-cp']}</p>
+                    <p id="pokemonCp"><small>PC</small>${data[pokemon].stats['max-cp']}</p>
                     <img id="pokemonImage"src="${data[pokemon].img}">
                     <p id="pokemonNum">#${data[pokemon].num}</p>
                     <p id="pokemonName">${data[pokemon].name.toUpperCase()}</p>
                     <p id="pokemonType">${data[pokemon].type}</p>`
-            // Crear un hijo de allCards
+        // Crear un hijo de allCards
         allCards.appendChild(card);
         card.innerHTML = infoPokemon;
     }
@@ -49,7 +50,7 @@ showPokemonData(allPokemon);
 
 document.getElementById("chooseOrder").addEventListener("change", chooseOrder);
 
-// Ordenar según el filtro seleccionado
+//ORDENAR DATA SEGÚN FILTRO SELECCIONADO
 function chooseOrder() {
     const chooseOrder = document.getElementById("chooseOrder");
     const order = chooseOrder.value;
@@ -81,6 +82,7 @@ function chooseOrder() {
 
 };
 
+//FUNCIÓN PARA ORDENAR LA DATA SEGÚN EL NOMBRE
 function orderItemsByName(a, b) {
     if (a.name < b.name) {
         return -1;
@@ -91,6 +93,7 @@ function orderItemsByName(a, b) {
     return 0;
 };
 
+//FUNCION PARA ORDENAR LA DATA SEGÚN EL NÚMERO
 function orderItemsByNum(a, b) {
     if (a.num < b.num) {
         return -1;
@@ -101,6 +104,7 @@ function orderItemsByNum(a, b) {
     return 0;
 };
 
+//FUNCIÓN PARA ORDENAR LA DATA SEGÚN MÁXIMO PODER DE COMBATE
 function orderItemsByPC(a, b) {
     if (parseInt(a.stats['max-cp']) < parseInt(b.stats['max-cp'])) {
         return -1;
@@ -111,8 +115,9 @@ function orderItemsByPC(a, b) {
     return 0;
 };
 
-document.getElementById("chooseType").addEventListener("change", filterTypes);
+document.querySelector(".chooseType").addEventListener("change", filterTypes);
 
+//FUNCIÓN PARA FILTRAR POR TIPO DE POKÉMON
 function filterTypes() {
     let pokemonType = document.getElementById("chooseType").value;
     let selectedPokemon = allPokemon.filter(pokemon => pokemon.type.includes(pokemonType));
@@ -120,8 +125,9 @@ function filterTypes() {
     showPokemonData(selectedPokemon);
 };
 
-document.getElementById("chooseGeneration").addEventListener("change", filterGeneration);
+document.querySelector(".chooseGeneration").addEventListener("change", filterGeneration);
 
+//FUNCIÓN PARA FILTRAR POR GENERACIÓN
 function filterGeneration() {
     let pokemonGeneration = document.getElementById("chooseGeneration").value;
     let selectedPokemon = allPokemon.filter(pokemon => pokemon.generation.name.includes(pokemonGeneration));
