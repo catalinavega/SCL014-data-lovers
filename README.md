@@ -212,10 +212,10 @@ al producto final y nuevas historias de usuario:
 
 * **Primera Versión**
 
-![json-interfaz](https://imgur.com/6VIcUKv)
+![json-interfaz](https://imgur.com/6VIcUKv.jpg)
 
-![json-interfaz](https://imgur.com/xqCYf4n)
+![json-interfaz](https://imgur.com/xqCYf4n.jpg)
 
-![json-interfaz](https://imgur.com/pIZ1PQK)
+![json-interfaz](https://imgur.com/pIZ1PQK.jpg)
 
 ## 5. IMAGEN FINAL DEL PROYECTO
