@@ -89,65 +89,83 @@ A raíz de nuestra investigación, decidimos priorizar las siguientes Historias 
 **HU1.** _"Yo como jugador de PG, quiero visualizar los 251 pokémon por el orden designado en la pokédex, para saber cuáles me faltan"._
 
 C.A.:
-- El usuario puede ver los 251 pokémon desde el inicio
-- Los 251 pokémon están ordenados (primero Kanto, luego Johto)
-- Cada pokémon tiene su número, nombre, imagen y tipo identificado en la ficha visible
-- El color de fondo de los pokémon corresponde también a la pokédex de la generación a la cual pertenecen
+- [x] El usuario puede ver los 251 pokémon desde el inicio
+- [x] Los 251 pokémon están ordenados (primero Kanto, luego Johto)
+- [x] Cada pokémon tiene su número, nombre, imagen y tipo identificado en la ficha visible
+- [x] color de fondo de los pokémon corresponde también a la pokédex de la generación a la cual pertenecen
 
 D.T.: 
-- Se respeta el diseño de prototipado
-- El diseño está hecho con flexbox
-- Se está trabajando con selectores de clase en CSS
-- Se utiliza html semántico
-- Se utiliza html dinámico
-- El código ha sido hecho en pair-programming
-- El código está utilizando arrays y objects
-- Se implementa función para mostrar a los 251 pokémon
-- El código está en el repositorio actualizado
+- [x] Se respeta el diseño de prototipado
+- [x] El diseño está hecho con flexbox
+- [x] Se está trabajando con selectores de clase en CSS
+- [x] Se utiliza html semántico
+- [x] Se utiliza html dinámico
+- [x] El código ha sido hecho en pair-programming
+- [x] El código está utilizando arrays y objects
+- [x] Se implementa función para mostrar a los 251 pokémon
+- [x] El código está en el repositorio actualizado
 
 **HU2** _"Yo como jugador de PG, quiero conocer el poder de combate de un pokémon, para competir en gimnasios e incursiones"._
 
 C.A.:
-- Cada Pokémon tiene visible su máximo PC en la ficha
-- El usuario puede ordenar los pokémon según su poder de combate (ascendente)
-- El usuario puede ordenar los pokémon según su poder de combate (descendente)
+- [x] Cada Pokémon tiene visible su máximo PC en la ficha
+- [x] El usuario puede ordenar los pokémon según su poder de combate (ascendente)
+- [x] El usuario puede ordenar los pokémon según su poder de combate (descendente)
 
 D.T.:
-- Se respeta el diseño de prototipado
-- Se utiliza html semántico
-- Se utiliza html dinámico
-- Se trabaja en pair-programming
-- El código utiliza arrays (sort, reverse) y objects
-- El código está actualizado en el repositorio
-- Se implementa función para ordenar a los 251 pokémon según PC
+- [x] Se respeta el diseño de prototipado
+- [x] Se utiliza html semántico
+- [x] Se utiliza html dinámico
+- [x] Se trabaja en pair-programming
+- [x] El código utiliza arrays (sort, reverse) y objects
+- [x] El código está actualizado en el repositorio
+- [x] Se implementa función para ordenar a los 251 pokémon según PC
 
 3. _"Yo como jugador de PG, quiero clickear en las fichas y que se den vuelta como cartas para ver la información adicional de cada pokémon"._
 
 C.A.:
-- Cuando el usuario elige a un Pokémon, la ficha se da vuelta como una carta y muestra información adicional
-- La transición del giro de la ficha es suave
-- El color del reverso es el mismo que el frontal (correspondiente a cada generación)
+- [ ] Cuando el usuario elige a un Pokémon, la ficha se da vuelta como una carta y muestra información adicional
+- [ ] La transición del giro de la ficha es suave
+- [ ] El color del reverso es el mismo que el frontal (correspondiente a cada generación)
 
 D.T.:
-- Se respeta el diseño de prototipado
-- Se utiliza html semántico
-- Se utiliza html dinámico
-- Se trabaja en pair-programming
-- La transición se crea con CSS en stylesheet
-- El código está actualizado en el repositorio
-- Se implementa función para obtener la información adicional de cada pokémon
-- El código está en el repositorio actualizado
-- Se realiza test de usabilidad al menos a 5 usuarios
+- [ ] Se respeta el diseño de prototipado
+- [ ] Se utiliza html semántico
+- [ ] Se utiliza html dinámico
+- [ ] Se trabaja en pair-programming
+- [ ] La transición se crea con CSS en stylesheet
+- [ ] El código está actualizado en el repositorio
+- [ ] Se implementa función para obtener la información adicional de cada pokémon
+- [ ] El código está en el repositorio actualizado
 
 4. _"Yo como jugador de PG, quiero saber cuáles son las chances de spawn de un pokémon, para priorizar las capturas"._
 
 C.A.:
+- [ ] Cuando el usuario elige a un Pokémon, las chances de spawn son mostradas al reverso de la ficha.
+- [ ] La información es entregada de forma clara y concisa
+
 D.T.:
+- [ ] Se respeta el diseño de prototipado
+- [ ] Se utiliza html semántico
+- [ ] Se utiliza html dinámico
+- [ ] Se trabaja en pair-programming
+- [ ] El código está actualizado en el repositorio
+- [ ] El código está en el repositorio actualizado
 
 5. _"Yo como jugador de PG, quiero conocer la tasa de captura base de un pokémon, para optimizar mis recursos (pokeballs, bayas, inciensos, etc.)"_
 
 C.A.:
+- [ ] Cuando el usuario elige a un Pokémon, la tasa de captura base es mostradas al reverso de la ficha.
+- [ ] La información es entregada de forma clara y concisa
+ 
 D.T.:
+- [ ] Se respeta el diseño de prototipado
+- [ ] Se utiliza html semántico
+- [ ] Se utiliza html dinámico
+- [ ] Se trabaja en pair-programming
+- [ ] El código está actualizado en el repositorio
+- [ ] El código está en el repositorio actualizado
+- [ ] Se realiza test de usabilidad al menos a 5 usuarios(*)
 
 * **Planificación**
 
@@ -191,5 +209,13 @@ al producto final y nuevas historias de usuario:
 ![json-interfaz](https://i.imgur.com/w08CWMG.jpg)
 
 ### 4.2 Prototipo de Alta Fidelidad
+
+* **Primera Versión**
+
+![json-interfaz](https://imgur.com/6VIcUKv)
+
+![json-interfaz](https://imgur.com/xqCYf4n)
+
+![json-interfaz](https://imgur.com/pIZ1PQK)
 
 ## 5. IMAGEN FINAL DEL PROYECTO

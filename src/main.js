@@ -1,45 +1,45 @@
-import data from "./data/pokemon/pokemon.js";
+import data from './data/pokemon/pokemon.js';
 
 //VARIABLE QUE LLAMA A TODA LA DATA
 const allPokemon = data.pokemon;
 
 //PASAR DE PÁG. DE LOGIN A PÁG. DE POKÉDEX
-document.getElementById("firstButton").addEventListener("click", hideAndShow);
+document.getElementById('firstButton').addEventListener('click', hideAndShow);
 
 function hideAndShow() {
-    document.getElementById("firstPage").classList.add("hidden");
-    document.getElementById("secondPage").classList.remove("hidden");
+    document.getElementById('firstPage').classList.add('hidden');
+    document.getElementById('secondPage').classList.remove('hidden');
 }
 
 // MOSTRAR Y OCULTAR MENU DESPLEGABLE (SIDEBAR)
-document.querySelector(".toggle-btn").addEventListener("click", showSidebar);
+document.querySelector('.toggle-btn').addEventListener('click', showSidebar);
 
 function showSidebar() {
-    document.getElementById("sidebar").classList.toggle("active");
+    document.getElementById('sidebar').classList.toggle('active');
 };
 
 // VARIABLE PARA LLAMAR AL SELECTOR DE CLASE #allCards
-let allCards = document.querySelector("#allCards");
+let allCards = document.querySelector('#allCards');
 
 //FUNCIÓN PARA MOSTRAR A LOS POKEMON
 const showPokemonData = (data) => {
     let infoPokemon = '';
     for (const pokemon in data) {
-        let card = document.createElement("div");
+        let card = document.createElement('div');
         // Condicionar el color de fondo de la tarjeta según la generación
         if (data[pokemon].generation.name === 'kanto') {
-            card.setAttribute("class", "kantoCard");
+            card.setAttribute('class', 'kantoCard');
         } else {
-            card.setAttribute("class", "johtoCard");
+            card.setAttribute('class', 'johtoCard');
         };
 
         // Usar template strings
         infoPokemon = `
-                    <p id="pokemonCp"><small>PC</small>${data[pokemon].stats['max-cp']}</p>
-                    <img id="pokemonImage"src="${data[pokemon].img}">
-                    <p id="pokemonNum">#${data[pokemon].num}</p>
-                    <p id="pokemonName">${data[pokemon].name.toUpperCase()}</p>
-                    <p id="pokemonType">${data[pokemon].type}</p>`
+                    <p id='pokemonCp'><small>PC</small>${data[pokemon].stats['max-cp']}</p>
+                    <img id='pokemonImage' src='${data[pokemon].img}'>
+                    <p id='pokemonNum'>#${data[pokemon].num}</p>
+                    <p id='pokemonName'>${data[pokemon].name.toUpperCase()}</p>
+                    <p id='pokemonType'>${data[pokemon].type}</p>`
         // Crear un hijo de allCards
         allCards.appendChild(card);
         card.innerHTML = infoPokemon;
@@ -48,11 +48,11 @@ const showPokemonData = (data) => {
 
 showPokemonData(allPokemon);
 
-document.getElementById("chooseOrder").addEventListener("change", chooseOrder);
+document.getElementById('chooseOrder').addEventListener('change', chooseOrder);
 
 //ORDENAR DATA SEGÚN FILTRO SELECCIONADO
 function chooseOrder() {
-    const chooseOrder = document.getElementById("chooseOrder");
+    const chooseOrder = document.getElementById('chooseOrder');
     const order = chooseOrder.value;
 
     if (order === 'aToZ') {
@@ -115,21 +115,21 @@ function orderItemsByPC(a, b) {
     return 0;
 };
 
-document.querySelector(".chooseType").addEventListener("change", filterTypes);
+document.querySelector('.chooseType').addEventListener('change', filterTypes);
 
 //FUNCIÓN PARA FILTRAR POR TIPO DE POKÉMON
 function filterTypes() {
-    let pokemonType = document.getElementById("chooseType").value;
+    let pokemonType = document.getElementById('chooseType').value;
     let selectedPokemon = allPokemon.filter(pokemon => pokemon.type.includes(pokemonType));
     document.getElementById('allCards').innerHTML = '';
     showPokemonData(selectedPokemon);
 };
 
-document.querySelector(".chooseGeneration").addEventListener("change", filterGeneration);
+document.querySelector('.chooseGeneration').addEventListener('change', filterGeneration);
 
 //FUNCIÓN PARA FILTRAR POR GENERACIÓN
 function filterGeneration() {
-    let pokemonGeneration = document.getElementById("chooseGeneration").value;
+    let pokemonGeneration = document.getElementById('chooseGeneration').value;
     let selectedPokemon = allPokemon.filter(pokemon => pokemon.generation.name.includes(pokemonGeneration));
     document.getElementById('allCards').innerHTML = '';
     showPokemonData(selectedPokemon);
