@@ -139,7 +139,6 @@ D.T.:
 - [ ] Se utiliza html dinámico
 - [ ] Se trabaja en pair-programming
 - [ ] El código está actualizado en el repositorio
-- [ ] El código está en el repositorio actualizado
 
 **HU5: "Yo como jugador de PG, quiero conocer la tasa de captura base de un pokémon, para optimizar mis recursos (pokeballs, bayas, inciensos, etc.)"**
 
@@ -153,7 +152,6 @@ D.T.:
 - [ ] Se utiliza html dinámico
 - [ ] Se trabaja en pair-programming
 - [ ] El código está actualizado en el repositorio
-- [ ] El código está en el repositorio actualizado
 - [ ] Se realiza test de usabilidad al menos a 5 usuarios
 - [ ] Se afinan detalles finales
 
