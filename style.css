@@ -51,7 +51,7 @@ body {
     padding-right: 20%;
 }
 
-.chooseOrder, .chooseType {
+.chooseOrder, .chooseType, .chooseGeneration {
     font-size: 20px;
     font-family: "Flexo Regular";
     padding: 10px;
