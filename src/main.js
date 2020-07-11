@@ -119,3 +119,12 @@ function filterTypes() {
     document.getElementById('allCards').innerHTML = '';
     showPokemonData(selectedPokemon);
 };
+
+document.getElementById("chooseGeneration").addEventListener("change", filterGeneration);
+
+function filterGeneration() {
+    let pokemonGeneration = document.getElementById("chooseGeneration").value;
+    let selectedPokemon = allPokemon.filter(pokemon => pokemon.generation.name.includes(pokemonGeneration));
+    document.getElementById('allCards').innerHTML = '';
+    showPokemonData(selectedPokemon);
+};
