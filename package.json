@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.html",
   "license": "MIT",
-  "homepage": "https://catalinavega.github.io/SCL014-data-lovers/src/index.html",
+  "homepage": "https://catalinavega.github.io/SCL014-data-lovers/",
   "scripts": {
     "htmlhint": "htmlhint src/*.html test/*.html",
     "eslint": "eslint --ext .js src/ test/",

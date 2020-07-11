@@ -143,7 +143,7 @@ D.T.:
 **HU5: "Yo como jugador de PG, quiero conocer la tasa de captura base de un pokémon, para optimizar mis recursos (pokeballs, bayas, inciensos, etc.)"**
 
 C.A.:
-- [ ] Cuando el usuario elige a un Pokémon, la tasa de captura base es mostradas al reverso de la ficha.
+- [ ] Cuando el usuario elige a un Pokémon, la tasa de captura base es mostrada al reverso de la ficha.
 - [ ] La información es entregada de forma clara y concisa
  
 D.T.:
