@@ -14,14 +14,35 @@
             <p class="pokemonPokedexTitle">POKÉMON GO: POKÉDEX</p>
         </div>
         <div class="navBar">
-            <select id="selectFilter" class="selectFilter">
+            <select id="chooseOrder" class="chooseOrder">
                 <option value disabled selected>Ordenar por...</option>
                 <option value="aToZ">A-Z</option>
                 <option value="zToA">Z-A</option>
                 <option value="numberAsc">N° más bajo (primero)</option>
                 <option value="numberDesc">N° más alto (primero)</option>
-                <option value="pcAsc">Mínimo PC primero</option>
-                <option value="pcDesc">Máximo PC primero</option>
+                <option value="pcAsc">Mín. PC primero</option>
+                <option value="pcDesc">Máx. PC primero</option>
+            </select>
+            <select id="chooseType" class="chooseType">
+                <option value disabled selected>Filtrar por Tipo</option>
+                <option value="steel">Acero</option>
+                <option value="water">Agua</option>
+                <option value='bug'>Bicho</option>
+                <option value="dragon">Dragón</option>
+                <option value="electric">Eléctrico</option>
+                <option value="ghost">Fantasma</option>
+                <option value="fire">Fuego</option>
+                <option value="fairy">Hada</option>
+                <option value="ice">Hielo</option>
+                <option value="normal">Normal</option>
+                <option value="fighting">Pelea</option>
+                <option value="grass">Planta</option>
+                <option value="psychic">Psíquico</option>
+                <option value="rock">Roca</option>
+                <option value='dark'>Siniestro</option>
+                <option value="ground">Tierra</option>
+                <option value="poison">Veneno</option>
+                <option value="flying">Volador</option>
             </select>
             <div class="searchInput">
                 <input type="text" class="searchBar" placeholder="Buscar...">

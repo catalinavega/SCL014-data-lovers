@@ -45,10 +45,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:20%;
+    padding-right: 20%;
 }
 
-.selectFilter {
+.chooseOrder, .chooseType {
     font-size: 20px;
     font-family: "Flexo Regular";
     padding: 10px;
