@@ -207,3 +207,5 @@ al producto final y nuevas historias de usuario:
 ![json-interfaz](https://imgur.com/pIZ1PQK.jpg)
 
 ## 5. IMAGEN FINAL DEL PROYECTO
+
+Link a proyecto: https://catalinavega.github.io/SCL014-data-lovers/
