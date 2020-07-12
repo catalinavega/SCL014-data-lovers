@@ -125,12 +125,11 @@ D.T.:
 - [ ] La transición se crea con CSS en stylesheet
 - [ ] El código está actualizado en el repositorio
 - [ ] Se implementa función para obtener la información adicional de cada pokémon
-- [ ] El código está en el repositorio actualizado
 
 **HU4: "Yo como jugador de PG, quiero saber cuáles son las chances de spawn de un pokémon, para priorizar las capturas".**
 
 C.A.:
-- [ ] Cuando el usuario elige a un Pokémon, las chances de spawn son mostradas al reverso de la ficha.
+- [ ] Cuando el usuario elige a un Pokémon, las chances de spawn son mostradas al reverso de la ficha
 - [ ] La información es entregada de forma clara y concisa
 
 D.T.:
@@ -143,7 +142,7 @@ D.T.:
 **HU5: "Yo como jugador de PG, quiero conocer la tasa de captura base de un pokémon, para optimizar mis recursos (pokeballs, bayas, inciensos, etc.)"**
 
 C.A.:
-- [ ] Cuando el usuario elige a un Pokémon, la tasa de captura base es mostrada al reverso de la ficha.
+- [ ] Cuando el usuario elige a un Pokémon, la tasa de captura base es mostrada al reverso de la ficha
 - [ ] La información es entregada de forma clara y concisa
  
 D.T.:
