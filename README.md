@@ -1,4 +1,4 @@
-# DATA LOVERS --> Pokémon Go: Pokédex
+# DATA LOVERS => Pokémon Go: Pokédex
 
 ## Índice
 
@@ -13,10 +13,10 @@
 ## 1. DEFINICIÓN DEL PRODUCTO
 
 
-## 1.1 ¿Qué es "Pokémon Go: Pokédex" y cuál es su finalidad?
+## 1.1 Finalidad del Producto
 "Pokémon Go: Pokédex" nace con la intención de brindar información relevante para los jugadores de Pokémon Go y ayudarles a tomar decisiones respecto a su estrategia de juego, basada en datos duros: información que puedan revisar desde cualquier dispositivo, de fácil lectura e interpretación y que esté a mano de cualquier aficionado al juego.
 
-## 1.2 ¿Cómo se origina "Pokémon Go: Pokédex"?
+## 1.2 Origen de Pokémon Go: Pokédex
 Previo a la creación del producto, se determinó que cierta data debía estar incluída a como diera lugar, por lo cual el presentar a todos los Pokémon por el orden de la Pokédex nos parecía fundamental (del #001 al #251). Tanto en la serie como en el juego, el orden ha sido un factor determinante a la hora de insertarse en el mundo de Pokémon. Sin importar el nivel de experiencia del jugador, siempre habrá tres pokémones clásicos identificables: Bulbasaur, Charmander y Squirtle, cada uno presentado junto a sus evoluciones, mostrando su imagen, breve descripción, características físicas, tales como peso y estatura, y su tipo (planta, bicho, fuego, agua, tierra, etc.) y este orden es lo que el jugador espera.
 Podemos inferir que de toda la data disponible, las siguientes nos permiten ofrecer una experiencia distinta al usuario: tasa de huida base, tasa de captura base, oportunidad de spawn, resistencia base (stamina), poder de combate y salud (máximo).
 
