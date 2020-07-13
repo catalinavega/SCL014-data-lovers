@@ -26,20 +26,33 @@ const showPokemonData = (data) => {
     let infoPokemon = '';
     for (const pokemon in data) {
         let card = document.createElement('div');
+        card.setAttribute('class', 'card');
         // Condicionar el color de fondo de la tarjeta según la generación
         if (data[pokemon].generation.name === 'kanto') {
             card.setAttribute('class', 'kantoCard');
+            // card.setAttribute('id', 'card');
         } else {
             card.setAttribute('class', 'johtoCard');
+            // card.setAttribute('id', 'card');
         };
 
         // Usar template strings
         infoPokemon = `
-                    <p id='pokemonCp'><small>PC</small>${data[pokemon].stats['max-cp']}</p>
-                    <img id='pokemonImage' src='${data[pokemon].img}'>
-                    <p id='pokemonNum'>#${data[pokemon].num}</p>
-                    <p id='pokemonName'>${data[pokemon].name.toUpperCase()}</p>
-                    <p id='pokemonType'>${data[pokemon].type}</p>`
+        <div class='card'>
+            <div class='pokemonCardFront'
+                <p id='pokemonCp'><small>PC</small>${data[pokemon].stats['max-cp']}</p>
+                <img id='pokemonImage' src='${data[pokemon].img}'>
+                <p id='pokemonNum'>#${data[pokemon].num}</p>
+                <p id='pokemonName'>${data[pokemon].name.toUpperCase()}</p>
+                <p id='pokemonType'>${data[pokemon].type}</p>
+            </div>
+            <div class='pokemonCardBack'>
+                <p id= 'pokemonSizeHeight'>Altura: ${data[pokemon].size['height']}</p>
+                <p id= 'pokemonSizeWeight'>Peso: ${data[pokemon].size['weight']}</p>
+                <p id= 'pokemonSpawnChance'>Probabilidad de aparición: ${data[pokemon]['spawn-chance']}</p>
+                <p id= 'pokemonEncounter'>Tasa de captura base: ${data[pokemon].encounter['base-capture-rate']}</p>
+            </div>
+        </div>`;
         // Crear un hijo de allCards
         allCards.appendChild(card);
         card.innerHTML = infoPokemon;
@@ -134,3 +147,23 @@ function filterGeneration() {
     document.getElementById('allCards').innerHTML = '';
     showPokemonData(selectedPokemon);
 };
+// Usar template strings
+infoPokemon += `
+        <div class='allCards'>
+            <div class='pokemonCards'>
+                <div class='pokemonCardFront'>
+                    <p id='pokemonCp'><small>PC</small>${data[pokemon].stats['max-cp']}</p>
+                    <img id='pokemonImage' src='${data[pokemon].img}'>
+                    <p id='pokemonNum'>#${data[pokemon].num}</p>
+                    <p id='pokemonName'>${data[pokemon].name.toUpperCase()}</p>
+                    <p id='pokemonType'>${data[pokemon].type}</p>
+                </div>
+                <div class='pokemonCardBack'>
+                    <p id= 'pokemonAbout'>Bio: ${data[pokemon].about}</p>
+                    <p id= 'pokemonSizeHeight'>Altura: ${data[pokemon].size['height']}</p>
+                    <p id= 'pokemonSizeWeight'>Peso: ${data[pokemon].size['weight']}</p>
+                    <p id= 'pokemonSpawnChance'>Probabilidad de aparición: ${data[pokemon]['spawn-chance']}</p>
+                    <p id= 'pokemonEncounter'>Tasa de captura base: ${data[pokemon].encounter['base-capture-rate']}</p>
+                </div>
+            </div>
+        </div>`;
