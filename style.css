@@ -48,11 +48,13 @@ body {
     justify-content: space-evenly;
     padding-top: 10px;
     padding-bottom: 20px;
-    padding-left:20%;
+    padding-left: 20%;
     padding-right: 20%;
 }
 
-.chooseOrder, .chooseType, .chooseGeneration {
+.chooseOrder,
+.chooseType,
+.chooseGeneration {
     font-size: 20px;
     font-family: "Flexo Regular";
     padding: 10px;
@@ -63,7 +65,6 @@ body {
     border: none;
     color: white;
 }
-
 
 option {
     color: rgb(95, 95, 95);
@@ -114,7 +115,8 @@ option {
     font-style: bold;
     font-size: 40px;
     border: 2px solid rgbrgb(95, 95, 95);
-    border-radius: 10px;;
+    border-radius: 10px;
+    ;
     color: rgb(41, 41, 41);
     background-color: white;
 }
@@ -239,8 +241,46 @@ option {
     padding: 20px 20px;
 }
 
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
 #pokemonImage {
     min-width: 200px;
+}
+
+.pokemonCardFront,
+.pokemonCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.pokemonFrontCard {
+    font-family: "Flexo Regular";
+    background-image: linear-gradient(to bottom, #ead7ff, #dfc3ff, #ddbfff, #d6b1ff, #cb9dff);
+    color: #fff;
+    width: 190px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.pokemonCardBack {
+    transform: rotateY(180deg);
 }
 
 .kantoCard {
