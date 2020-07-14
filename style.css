@@ -25,7 +25,6 @@ body {
 .header {
     display: flex;
     flex-direction: column;
-    /* background-color: #c7c7c7b9; */
     background: linear-gradient(119.36deg, #52B888 0%, #266378 100%);
     height: auto;
 }
@@ -40,6 +39,25 @@ body {
     font-weight: none;
     font-family: "Flexo Demi";
     color: white;
+}
+
+.welcomeUser {
+    text-align: right;
+    margin-right: 400px;
+    font-family: "Flexo Regular";
+    color: white;
+    padding-top: 10px;
+}
+
+.loginWhite {
+    padding-right: 10px;
+    height: 20px;
+    width: auto;
+    position: relative;
+}
+
+h3 {
+    float: right;
 }
 
 .navBar {
@@ -60,10 +78,11 @@ body {
     padding: 10px;
     width: 250px;
     margin-top: 20px;
+    margin-right: 10px;
     background-image: linear-gradient(to bottom, #a8dd9c, #91d99c, #76d59f, #57d1a4, #24ccaa);
     border-radius: 10px;
-    border: none;
     color: white;
+    border: 2px solid #FFFFFF;
 }
 
 option {
@@ -237,29 +256,29 @@ option {
 .allCards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px 20px;
 }
 
-.card {
+#card {
+    display: flex;
+    justify-content: center;
     position: relative;
     background-image: linear-gradient(to bottom, #ead7ff, #dfc3ff, #ddbfff, #d6b1ff, #cb9dff);
     width: 100%;
     height: 100%;
-    font-family: "Flexo Regular";
-    color: #000;
     width: 190px;
     height: 300px;
-    padding: 30px;
     border-radius: 20px;
+    padding: 30px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    transition: all 0.6s ease-in-out;
+    transition: all 1s ease-in-out;
     transform-style: preserve-3d;
 }
 
-.card:hover {
+#card:hover {
     transform: rotateY(180deg);
 }
 
@@ -270,8 +289,8 @@ option {
 .pokemonCardFront,
 .pokemonCardBack {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -290,11 +309,11 @@ option {
 
 #pokemonCp {
     font-family: "Flexo Demi";
+    color: rgb(95, 95, 95);
     font-size: 25px;
     text-align: center;
     font-weight: 500;
     padding-bottom: 10px;
-    color: rgb(95, 95, 95)
 }
 
 small {
@@ -303,11 +322,50 @@ small {
     color: rgb(95, 95, 95);
 }
 
-#pokemonNum {
-    font-size: 20px;
+#pokemonNum,
+#pokemonType {
+    display: flex;
+    align-self: left;
+    font-size: 18px;
+    font-family: "Flexo Regular";
+    color: rgb(95, 95, 95);
 }
 
 #pokemonName {
+    display: flex;
+    align-self: left;
     font-family: "Flexo Demi";
-    font-size: 20px;
+    font-size: 22px;
+}
+
+.imgType {
+    width: 30px;
+}
+
+#pokemonAbout {
+    display: flex;
+    align-self: left;
+    text-align: left;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family: "Flexo Regular";
+    color: rgb(95, 95, 95);
+}
+
+#pokemonSizeInfo {
+    display: flex;
+    justify-content: center;
+    border-top: 0.5px solid #000;
+    border-bottom: 0.5px solid #000;
+}
+
+#pokemonSizeHeight,
+#pokemonSizeWeight,
+#pokemonSpawnChance,
+#pokemonEncounter {
+    font-size: 16px;
+    font-family: "Flexo Regular";
+    color: rgb(95, 95, 95);
 }
