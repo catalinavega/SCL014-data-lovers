@@ -1,6 +1,8 @@
 import data from './data/pokemon/pokemon.js';
-
-//VARIABLE QUE LLAMA A TODA LA DATA
+// import {
+//     searchPokemons
+// } from '.data.js';
+// VARIABLE QUE LLAMA A TODA LA DATA
 const allPokemon = data.pokemon;
 
 //PASAR DE PÁG. DE LOGIN A PÁG. DE POKÉDEX
@@ -16,6 +18,7 @@ saveUsername.addEventListener('click', () => {
 function hideAndShow() {
     document.getElementById('firstPage').classList.add('hidden');
     document.getElementById('secondPage').classList.remove('hidden');
+    document.getElementById('footer').classList.remove('hidden');
 }
 
 
@@ -44,28 +47,21 @@ const showPokemonData = (data) => {
                 <img id='pokemonImage' src='${data[pokemon].img}'>
                 <p id='pokemonNum'>#${data[pokemon].num}</p>
                 <p id='pokemonName'>${data[pokemon].name.toUpperCase()}</p>
-                <p id='pokemonType'><img class='imgType' src='img/type-icons/${data[pokemon].type[0]}.png'>
-                <img class='imgType' src='img/type-icons/${data[pokemon].type[1]}.png'></p>
+                <p id='pokemonType'><img class='imgType' alt='' src='img/type-icons/${data[pokemon].type[0]}.png'>
+                <img class='imgType' alt='' src='img/type-icons/${data[pokemon].type[1]}.png'>
             </div>
             <div class='pokemonCardBack'>
-                <p id='pokemonAbout'><b>BIO: </b>${data[pokemon].about}</p>
-                <p id='pokemonSizeInfo'><span id='pokemonSizeHeight'>ALTURA: ${data[pokemon].size['height']}</span>
-                <span id='pokemonSizeWeight'>PESO: ${data[pokemon].size['weight']}</span></p>
-                <p id='pokemonSpawnChance'>Posibilidad de aparición: ${data[pokemon]['spawn-chance']}</p>
-                <p id='pokemonEncounter'>Tasa de captura base: ${data[pokemon].encounter['base-capture-rate']}</p>
+                <p id='pokemonHeight'>ALTURA:&nbsp;<b>${data[pokemon].size['height']}</b></p>
+                <p id='pokemonWeight'>PESO:&nbsp;<b>${data[pokemon].size['weight']}</b></p>
+                <p id='pokemonSpawnChance'>% Aparición:&nbsp;<b>${data[pokemon]['spawn-chance']}%</b></p>
+                <p id='pokemonEncounter'>% Captura Base:&nbsp;<b>${data[pokemon].encounter['base-capture-rate']}%</b></p>
+                <p id='pokemonAbout'><b>BIO:</b>&nbsp;${data[pokemon].about}</p>
             </div>
         </div>`;
+
         // Crear un hijo de allCards
         allCards.appendChild(card);
         card.innerHTML = infoPokemon;
-        // for (let i = 0; i < data[pokemon]['type'].length; i++) {
-        //     let rellenar = document.getElementById('pokemonType');
-        //     let image = document.createElement('img');
-        //     rellenar.appendChild(image);
-        //     rellenar.setAttribute('class', 'imgType');
-        //     rellenar.setAttribute('src', `img/type-icons/${data[pokemon].type[i]}.png`);
-        //     console.log(data[pokemon].type[i]);
-        // };
     };
 };
 
@@ -157,11 +153,21 @@ function filterGeneration() {
     showPokemonData(selectedPokemon);
 };
 
+//FUNCIÓN SEARCHBAR
+// const searchBarPokemons = (pokemonAll, inputValue) => pokemonAll.orderItemsByName(
+//     (pokemon) => pokemon.name.toLowerCase().startsWith(inputValue)
+// );
+// const searchPokemons = document.getElementById('searchPokemon');
+// searchPokemons.addEventListener('input', () => {
+//     allPokemon.innerHTML = '';
+//     showPokemonData(searchBarPokemons(allPokemon, searchBarPokemons.value));
+// });
 
-// if (data[pokemon].generation.name === 'kanto') {
-//     document.getElementById('card').classList.add('kantoCard');
-//     // card.setAttribute('id', 'card');
-// } else {
-//     document.getElementById('card').classList.add('johtoCard');
-//     // card.setAttribute('id', 'card');
-// };
+document.querySelector('.searchPokemon').addEventListener('keyup', searchBarPokemons);
+
+function searchBarPokemons() {
+    let pokemonSearch = document.getElementById('searchPokemon').value.toUpperCase();
+    let searchPokemon = allPokemon.filter(pokemon => pokemon.name.includes(pokemonSearch));
+    document.getElementById('allCards').innerHTML = '';
+    showPokemonData(searchPokemon);
+};

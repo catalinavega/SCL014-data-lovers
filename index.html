@@ -79,7 +79,7 @@
             </select>
             <!-- BARRA DE BÚSQUEDA -->
             <div class='searchInput'>
-                <input type='text' class='searchBar' placeholder='Buscar...'>
+                <input id='searchPokemon' type='search' class='searchBar' placeholder='Buscar...' autocomplete='off' onkeyup='searchBarPokemons'>
             </div>
         </div>
 
@@ -96,7 +96,7 @@
                 <!-- LOGIN CONTAINER -->
                 <div class='inputContainer'>
                     <img id='loginIcon' src='img/login.png'>
-                    <input id='username' class='username' type='text' placeholder='Usuario'>
+                    <input id='username' class='username' type='text' placeholder='Usuario' autocomplete='off'>
                 </div>
                 <div class='inputContainer'>
                     <img id='lockIcon' src='img/candado.png'>
@@ -112,8 +112,19 @@
         <!-- DIV DE CARTAS -->
         <div id='allCards' class='allCards'>
         </div>
+    </div>
+
+    <div id='thirdPage' class='screen3 hidden'>
 
     </div>
+
+    <footer id='footer' class='hidden'>
+        <div id='downloads'>
+            <img id='googlePlay' class='downloadApp' alt='' src='img/googleplay.png'>
+            <img id='appleStore' class='downloadApp' alt='' src='img/applestore.png'>
+        </div>
+        <p id='allRightsReserved'>©Todos los derechos reservados 2020</p>
+    </footer>
     <script src='main.js' type='module'></script>
 </body>
 

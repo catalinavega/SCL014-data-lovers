@@ -1,4 +1,4 @@
-// estas funciones son de ejemplo
-export const example = () => 'example';
-
-export const anotherExample = () => 'OMG';
+//FUNCIÓN SEARCHBAR
+// export const searchPokemons = (pokemonAll, inputValue) => pokemonAll.orderItemsByName(
+//     (pokemon) => pokemon.name.toLowerCase().startsWith(inputValue)
+// );

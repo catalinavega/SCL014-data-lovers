@@ -45,6 +45,7 @@ body {
     text-align: right;
     margin-right: 400px;
     font-family: "Flexo Regular";
+    font-size: 18px;
     color: white;
     padding-top: 10px;
 }
@@ -133,10 +134,9 @@ option {
     text-align: center;
     font-style: bold;
     font-size: 40px;
-    border: 2px solid rgbrgb(95, 95, 95);
+    border: 2px solid rgb(95, 95, 95);
     border-radius: 10px;
-    ;
-    color: rgb(41, 41, 41);
+    color: rgb(95, 95, 95);
     background-color: white;
 }
 
@@ -268,7 +268,7 @@ option {
     width: 100%;
     height: 100%;
     width: 190px;
-    height: 300px;
+    height: 330px;
     border-radius: 20px;
     padding: 30px;
     margin-left: auto;
@@ -295,24 +295,11 @@ option {
     backface-visibility: hidden;
 }
 
-.pokemonCardBack {
-    transform: rotateY(180deg);
-}
-
-.kantoCard {
-    background-image: linear-gradient(to bottom, #ead7ff, #dfc3ff, #ddbfff, #d6b1ff, #cb9dff);
-}
-
-.johtoCard {
-    background-image: linear-gradient(to bottom, #ccd6fd, #c8d6fd, #B0C6FA, #A9C3F9, #94b6f1);
-}
-
 #pokemonCp {
     font-family: "Flexo Demi";
     color: rgb(95, 95, 95);
-    font-size: 25px;
+    font-size: 24px;
     text-align: center;
-    font-weight: 500;
     padding-bottom: 10px;
 }
 
@@ -335,16 +322,19 @@ small {
     display: flex;
     align-self: left;
     font-family: "Flexo Demi";
-    font-size: 22px;
+    color: rgb(95, 95, 95);
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
 .imgType {
-    width: 30px;
+    width: 40px;
+    margin-right: 10px;
 }
 
 #pokemonAbout {
     display: flex;
-    align-self: left;
+    align-self: center;
     text-align: left;
     font-size: 14px;
     margin-left: 20px;
@@ -352,20 +342,67 @@ small {
     margin-bottom: 20px;
     font-family: "Flexo Regular";
     color: rgb(95, 95, 95);
+    text-overflow: ellipsis;
 }
 
-#pokemonSizeInfo {
-    display: flex;
-    justify-content: center;
-    border-top: 0.5px solid #000;
-    border-bottom: 0.5px solid #000;
-}
-
-#pokemonSizeHeight,
-#pokemonSizeWeight,
+#pokemonHeight,
+#pokemonWeight,
 #pokemonSpawnChance,
 #pokemonEncounter {
+    display: flex;
+    justify-content: left;
     font-size: 16px;
     font-family: "Flexo Regular";
     color: rgb(95, 95, 95);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#pokemonHeight {
+    border-top: 1px solid rgba(98, 98, 98, 0.548);
+}
+
+#pokemonEncounter {
+    border-bottom: 1px solid rgba(98, 98, 98, 0.548);
+}
+
+.pokemonCardBack {
+    transform: rotateY(180deg);
+}
+
+.kantoCard {
+    background-image: linear-gradient(to bottom, #ead7ff, #dfc3ff, #ddbfff, #d6b1ff, #cb9dff);
+}
+
+.johtoCard {
+    background-image: linear-gradient(to bottom, #ccd6fd, #c8d6fd, #B0C6FA, #A9C3F9, #94b6f1);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(119.36deg, #52B888 0%, #266378 100%);
+    height: auto;
+}
+
+#downloads {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.downloadApp {
+    margin-top: 10px;
+    width: 200px;
+    padding: 20px;
+}
+
+#allRightsReserved {
+    align-self: center;
+    font-size: 20px;
+    font-family: "Flexo Regular";
+    padding: 10px;
+    color: white;
+    margin-bottom: 30px;
 }
