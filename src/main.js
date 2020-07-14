@@ -38,29 +38,38 @@ const showPokemonData = (data) => {
 
         // Usar template strings
         infoPokemon = `
-        <div id="card" class='card'>
-            <div class='pokemonCardFront'
+        <div id="card" class=''>
+            <div class='pokemonCardFront'>
                 <p id='pokemonCp'><small>PC</small>${data[pokemon].stats['max-cp']}</p>
                 <img id='pokemonImage' src='${data[pokemon].img}'>
                 <p id='pokemonNum'>#${data[pokemon].num}</p>
                 <p id='pokemonName'>${data[pokemon].name.toUpperCase()}</p>
-                <p id='pokemonType'>${data[pokemon].type}</p>
+                <p id='pokemonType'><img class='imgType' src='img/type-icons/${data[pokemon].type[0]}.png'>
+                <img class='imgType' src='img/type-icons/${data[pokemon].type[1]}.png'></p>
             </div>
             <div class='pokemonCardBack'>
-                <p id= 'pokemonSizeHeight'>Altura: ${data[pokemon].size['height']}</p>
-                <p id= 'pokemonSizeWeight'>Peso: ${data[pokemon].size['weight']}</p>
-                <p id= 'pokemonSpawnChance'>Probabilidad de aparición: ${data[pokemon]['spawn-chance']}</p>
-                <p id= 'pokemonEncounter'>Tasa de captura base: ${data[pokemon].encounter['base-capture-rate']}</p>
+                <p id='pokemonAbout'><b>BIO: </b>${data[pokemon].about}</p>
+                <p id='pokemonSizeInfo'><span id='pokemonSizeHeight'>ALTURA: ${data[pokemon].size['height']}</span>
+                <span id='pokemonSizeWeight'>PESO: ${data[pokemon].size['weight']}</span></p>
+                <p id='pokemonSpawnChance'>Posibilidad de aparición: ${data[pokemon]['spawn-chance']}</p>
+                <p id='pokemonEncounter'>Tasa de captura base: ${data[pokemon].encounter['base-capture-rate']}</p>
             </div>
         </div>`;
         // Crear un hijo de allCards
         allCards.appendChild(card);
         card.innerHTML = infoPokemon;
-    }
+        // for (let i = 0; i < data[pokemon]['type'].length; i++) {
+        //     let rellenar = document.getElementById('pokemonType');
+        //     let image = document.createElement('img');
+        //     rellenar.appendChild(image);
+        //     rellenar.setAttribute('class', 'imgType');
+        //     rellenar.setAttribute('src', `img/type-icons/${data[pokemon].type[i]}.png`);
+        //     console.log(data[pokemon].type[i]);
+        // };
+    };
 };
 
 showPokemonData(allPokemon);
-
 document.getElementById('chooseOrder').addEventListener('change', chooseOrder);
 
 //ORDENAR DATA SEGÚN FILTRO SELECCIONADO
