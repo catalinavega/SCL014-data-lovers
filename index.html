@@ -10,6 +10,8 @@
 
 <body>
     <header class='header'>
+        <!--Back To Top -->
+        <a id="top"></a>
         <!-- TÍTULO DE PÁGINA -->
         <div class='titleContainer'>
             <p class='pokemonPokedexTitle'>POKÉMON GO: POKÉDEX</p>
@@ -79,7 +81,7 @@
             </select>
             <!-- BARRA DE BÚSQUEDA -->
             <div class='searchInput'>
-                <input id='searchPokemon' type='search' class='searchBar' placeholder='Buscar...' autocomplete='off' onkeyup='searchBarPokemons'>
+                <input id='searchPokemon' type='search' class='searchBar' placeholder='Buscar...' autocomplete='off'>
             </div>
         </div>
 
@@ -87,6 +89,7 @@
     </header>
 
     <!-- PRIMERA PÁGINA: BIENVENIDA USUARIO -->
+
     <div id='firstPage' class='screen1'>
         <div class='welcome'>
             <div class='loginContainer'>
@@ -108,20 +111,22 @@
     </div>
 
     <!-- SEGUNDA PÁGINA: POKEDEX DESPLEGADA -->
+
     <div id='secondPage' class='screen2 hidden'>
         <!-- DIV DE CARTAS -->
         <div id='allCards' class='allCards'>
         </div>
+        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">▲</a>
     </div>
 
     <div id='thirdPage' class='screen3 hidden'>
-
+        <div id=''></div>
     </div>
 
     <footer id='footer' class='hidden'>
         <div id='downloads'>
-            <img id='googlePlay' class='downloadApp' alt='' src='img/googleplay.png'>
-            <img id='appleStore' class='downloadApp' alt='' src='img/applestore.png'>
+            <a href='https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=es_CL'><img id='googlePlay' class='downloadApp' alt='' src='img/googleplay.png'></a>
+            <a href='https://apps.apple.com/es/app/pok%C3%A9mon-go/id1094591345'><img id='appleStore' class='downloadApp' alt='' src='img/applestore.png'></a>
         </div>
         <p id='allRightsReserved'>©Todos los derechos reservados 2020</p>
     </footer>
