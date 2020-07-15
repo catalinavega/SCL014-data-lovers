@@ -1,4 +1,5 @@
 import data from './data/pokemon/pokemon.js';
+import { sortOrder } from './data.js';
 
 // VARIABLE QUE LLAMA A TODA LA DATA
 const allPokemon = data.pokemon;
@@ -73,73 +74,19 @@ const showPokemonData = (data) => {
 };
 
 showPokemonData(allPokemon);
-document.getElementById('chooseOrder').addEventListener('change', chooseOrder);
+
+// FUNCION QUE PERMITE ORDENAR SEGUN OPCION DEL SELECT
+const chooseOrder = document.getElementById('chooseOrder');
+
+chooseOrder.addEventListener('change', () => {
+    document.getElementById('allCards').innerHTML = '';
+    const selected = chooseOrder.options[chooseOrder.selectedIndex].value;
+    let sortData = sortOrder.chooseOrder(allPokemon, selected);
+    showPokemonData(sortData);
+});
+
 
 //ORDENAR DATA SEGÚN FILTRO SELECCIONADO
-function chooseOrder() {
-    const chooseOrder = document.getElementById('chooseOrder');
-    const order = chooseOrder.value;
-
-    if (order === 'aToZ') {
-        document.getElementById('allCards').innerHTML = '';
-        showPokemonData(allPokemon.sort(orderItemsByName));
-    }
-    if (order === 'zToA') {
-        document.getElementById('allCards').innerHTML = '';
-        showPokemonData((allPokemon.sort(orderItemsByName)).reverse());
-    }
-    if (order === 'numberAsc') {
-        document.getElementById('allCards').innerHTML = '';
-        showPokemonData(allPokemon.sort(orderItemsByNum));
-    }
-    if (order === 'numberDesc') {
-        document.getElementById('allCards').innerHTML = '';
-        showPokemonData((allPokemon.sort(orderItemsByNum)).reverse());
-    }
-    if (order === 'pcAsc') {
-        document.getElementById('allCards').innerHTML = '';
-        showPokemonData(allPokemon.sort(orderItemsByPC));
-    }
-    if (order === 'pcDesc') {
-        document.getElementById('allCards').innerHTML = '';
-        showPokemonData((allPokemon.sort(orderItemsByPC)).reverse());
-    }
-
-};
-
-//FUNCIÓN PARA ORDENAR LA DATA SEGÚN EL NOMBRE
-function orderItemsByName(a, b) {
-    if (a.name < b.name) {
-        return -1;
-    }
-    if (a.name > b.name) {
-        return 1;
-    }
-    return 0;
-};
-
-//FUNCION PARA ORDENAR LA DATA SEGÚN EL NÚMERO
-function orderItemsByNum(a, b) {
-    if (a.num < b.num) {
-        return -1;
-    }
-    if (a.num > b.num) {
-        return 1;
-    }
-    return 0;
-};
-
-//FUNCIÓN PARA ORDENAR LA DATA SEGÚN MÁXIMO PODER DE COMBATE
-function orderItemsByPC(a, b) {
-    if (parseInt(a.stats['max-cp']) < parseInt(b.stats['max-cp'])) {
-        return -1;
-    }
-    if (parseInt(a.stats['max-cp']) > parseInt(b.stats['max-cp'])) {
-        return 1;
-    }
-    return 0;
-};
-
 document.querySelector('.chooseType').addEventListener('change', filterTypes);
 
 //FUNCIÓN PARA FILTRAR POR TIPO DE POKÉMON
