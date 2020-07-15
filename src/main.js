@@ -1,7 +1,5 @@
 import data from './data/pokemon/pokemon.js';
-// import {
-//     searchPokemons
-// } from '.data.js';
+
 // VARIABLE QUE LLAMA A TODA LA DATA
 const allPokemon = data.pokemon;
 
@@ -55,7 +53,16 @@ const showPokemonData = (data) => {
                 <p id='pokemonWeight'>PESO:&nbsp;<b>${data[pokemon].size['weight']}</b></p>
                 <p id='pokemonSpawnChance'>% Aparición:&nbsp;<b>${data[pokemon]['spawn-chance']}%</b></p>
                 <p id='pokemonEncounter'>% Captura Base:&nbsp;<b>${data[pokemon].encounter['base-capture-rate']}%</b></p>
-                <p id='pokemonAbout'><b>BIO:</b>&nbsp;${data[pokemon].about}</p>
+                <p id='pokemonResistance'><b>RESISTENCIA</p></p>
+                <p id='pokemonResistanceImg'>
+                <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[0]}.png'>
+                <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[1]}.png'>
+                <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[2]}.png'>
+                <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[3]}.png'>
+                <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[4]}.png'>
+                <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[5]}.png'>
+                <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[6]}.png'>
+                <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[7]}.png'></p>
             </div>
         </div>`;
 
@@ -154,20 +161,11 @@ function filterGeneration() {
 };
 
 //FUNCIÓN SEARCHBAR
-// const searchBarPokemons = (pokemonAll, inputValue) => pokemonAll.orderItemsByName(
-//     (pokemon) => pokemon.name.toLowerCase().startsWith(inputValue)
-// );
-// const searchPokemons = document.getElementById('searchPokemon');
-// searchPokemons.addEventListener('input', () => {
-//     allPokemon.innerHTML = '';
-//     showPokemonData(searchBarPokemons(allPokemon, searchBarPokemons.value));
-// });
-
-document.querySelector('.searchPokemon').addEventListener('keyup', searchBarPokemons);
+document.querySelector('.searchBar').addEventListener('keyup', searchBarPokemons);
 
 function searchBarPokemons() {
-    let pokemonSearch = document.getElementById('searchPokemon').value.toUpperCase();
-    let searchPokemon = allPokemon.filter(pokemon => pokemon.name.includes(pokemonSearch));
+    let searchPokemons = document.getElementById('searchPokemon').value;
+    let searchPokemon = allPokemon.filter(pokemon => pokemon.name.includes(searchPokemons));
     document.getElementById('allCards').innerHTML = '';
-    showPokemonData(searchPokemon);
+    console.log(showPokemonData(searchPokemon));
 };

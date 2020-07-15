@@ -13,6 +13,13 @@
     margin: 0;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
+}
+
 body {
     background: url(img/background-patterns/gplaypattern.png);
     background-repeat: repeat;
@@ -20,6 +27,25 @@ body {
 
 .hidden {
     display: none;
+}
+
+.back-to-top-link {
+    left: 90%;
+    margin-bottom: 15%;
+    display: inline-block;
+    position: fixed;
+    top: calc(100vh - 5rem);
+    text-decoration: none;
+    pointer-events: all;
+    font-size: 2rem;
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: linear-gradient(119.36deg, #52B888 0%, #266378 100%);
+    color: #FFFFFF;
+    font-size: 60px;
+    /* margin-right: 20% */
 }
 
 .header {
@@ -276,6 +302,7 @@ option {
     margin-bottom: 30px;
     transition: all 1s ease-in-out;
     transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 #card:hover {
@@ -332,19 +359,6 @@ small {
     margin-right: 10px;
 }
 
-#pokemonAbout {
-    display: flex;
-    align-self: center;
-    text-align: left;
-    font-size: 14px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    font-family: "Flexo Regular";
-    color: rgb(95, 95, 95);
-    text-overflow: ellipsis;
-}
-
 #pokemonHeight,
 #pokemonWeight,
 #pokemonSpawnChance,
@@ -365,6 +379,20 @@ small {
 
 #pokemonEncounter {
     border-bottom: 1px solid rgba(98, 98, 98, 0.548);
+}
+
+#pokemonResistance {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-family: "Flexo Regular";
+    color: rgb(95, 95, 95);
+    margin-bottom: 10px;
+}
+
+.imgResistance {
+    width: 40px;
+    margin-left: 20px;
 }
 
 .pokemonCardBack {
