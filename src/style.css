@@ -1,436 +1,670 @@
-@font-face {
-    font-family: "Flexo Demi";
-    src: url(fonts/flexo-demi-webfont.woff) format("woff");
-}
-
-@font-face {
-    font-family: "Flexo Regular";
-    src: url(fonts/flexo-regular-webfont.woff) format("woff");
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-    html,
-    body {
-        scroll-behavior: smooth;
+    @font-face {
+        font-family: "Flexo Demi";
+        src: url(fonts/flexo-demi-webfont.woff) format("woff");
     }
-}
-
-body {
-    background: url(img/background-patterns/gplaypattern.png);
-    background-repeat: repeat;
-}
-
-.hidden {
-    display: none;
-}
-
-.back-to-top-link {
-    left: 90%;
-    margin-bottom: 15%;
-    display: inline-block;
-    position: fixed;
-    top: calc(100vh - 5rem);
-    text-decoration: none;
-    pointer-events: all;
-    font-size: 2rem;
-    text-align: center;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    background: linear-gradient(119.36deg, #52B888 0%, #266378 100%);
-    color: #FFFFFF;
-    font-size: 60px;
-    /* margin-right: 20% */
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(119.36deg, #52B888 0%, #266378 100%);
-    height: auto;
-}
-
-.titleContainer {
-    align-self: center;
-    padding-top: 30px;
-}
-
-.pokemonPokedexTitle {
-    font-size: 40px;
-    font-weight: none;
-    font-family: "Flexo Demi";
-    color: white;
-}
-
-.welcomeUser {
-    text-align: right;
-    margin-right: 400px;
-    font-family: "Flexo Regular";
-    font-size: 18px;
-    color: white;
-    padding-top: 10px;
-}
-
-.loginWhite {
-    padding-right: 10px;
-    height: 20px;
-    width: auto;
-    position: relative;
-}
-
-h3 {
-    float: right;
-}
-
-.navBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-.chooseOrder,
-.chooseType,
-.chooseGeneration {
-    font-size: 20px;
-    font-family: "Flexo Regular";
-    padding: 10px;
-    width: 250px;
-    margin-top: 20px;
-    margin-right: 10px;
-    background-image: linear-gradient(to bottom, #a8dd9c, #91d99c, #76d59f, #57d1a4, #24ccaa);
-    border-radius: 10px;
-    color: white;
-    border: 2px solid #FFFFFF;
-}
-
-option {
-    color: rgb(95, 95, 95);
-}
-
-.searchInput {
-    align-self: flex-end;
-}
-
-.searchBar {
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    padding: 5px;
-    padding-left: 10px;
-    font-size: 20px;
-    font-family: "Flexo Regular";
-    width: 250px;
-    margin-top: 20px;
-    margin-left: 33px;
-}
-
-#sidebar {
-    position: fixed;
-    text-align: center;
-    width: 380px;
-    left: -380px;
-    height: auto;
-    background-image: linear-gradient(to bottom, #a8dd9c, #91d99c, #76d59f, #57d1a4, #24ccaa);
-    transition: all 0.75s ease-in-out;
-}
-
-#sidebar .toggle-btn {
-    position: absolute;
-    left: 410px;
-    top: 30px;
-    cursor: pointer;
-}
-
-#sidebar.active {
-    left: 0;
-}
-
-#sidebar .toggle-btn span {
-    display: block;
-    width: 50px;
-    text-align: center;
-    font-style: bold;
-    font-size: 40px;
-    border: 2px solid rgb(95, 95, 95);
-    border-radius: 10px;
-    color: rgb(95, 95, 95);
-    background-color: white;
-}
-
-#sidebar ul li {
-    font-family: "Flexo Regular";
-    font-size: 25px;
-    text-decoration: none;
-    color: white;
-    border-bottom: 2px solid #fff;
-    padding: 15px;
-}
-
-#sidebar ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-#menuPokeball {
-    max-width: 100px;
-}
-
-.screen1 {
-    background-image: linear-gradient(to bottom, #24CCAA, #57D1A4, #76D59F, #91D99C, #A8DD9C);
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.welcome {
-    display: flex;
-    flex-flow: wrap column;
-    align-content: center;
-    justify-content: space-between;
-    font-family: "Flexo Regular";
-    align-self: center;
-}
-
-.loginContainer {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 90%;
-    background-color: #f1ffef6e;
-    font-family: "Flexo Regular";
-    color: rgb(95, 95, 95);
-    margin-top: 45px;
-    border-radius: 10px;
-}
-
-.pgLogo {
-    align-self: center;
-    width: 80%;
-    padding-top: 25%;
-    padding-bottom: 15%;
-}
-
-.welcomeToPokedex {
-    font-family: "Flexo Demi";
-    align-self: center;
-    font-size: 20px;
-    color: rgb(95, 95, 95);
-    margin-bottom: 15px;
-}
-
-#loginIcon,
-#lockIcon {
-    width: 18px;
-    opacity: 0.5;
-    padding-left: 40px;
-}
-
-.inputContainer {
-    align-self: center;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    background-color: rgba(255, 255, 255, 0.52);
-}
-
-.username,
-.password {
-    width: 50%;
-    height: 15px;
-    font-size: 20px;
-    padding: 15px;
-    font-family: "Flexo Regular";
-    border-radius: 10px;
-    border-style: none;
-    background: none;
-}
-
-.sendInfo {
-    align-self: center;
-    font-size: 20px;
-    padding: 20px;
-    width: 250px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    background: linear-gradient(180deg, #A8DD9C 0%, #24CCAA 100%);
-    color: white;
-    border: 2px solid #FFFFFF;
-    border-radius: 10px;
-    font-family: "Flexo Regular";
-    font-weight: 500;
-}
-
-#secondPage {
-    background-color: #ffffff;
-    margin: 0% 20% 0% 20%;
-    align-items: flex-start
-}
-
-.allCards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 20px 20px;
-}
-
-#card {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    background-image: linear-gradient(to bottom, #ead7ff, #dfc3ff, #ddbfff, #d6b1ff, #cb9dff);
-    width: 100%;
-    height: 100%;
-    width: 190px;
-    height: 330px;
-    border-radius: 20px;
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    transition: all 1s ease-in-out;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-}
-
-#card:hover {
-    transform: rotateY(180deg);
-}
-
-#pokemonImage {
-    max-width: 200px;
-}
-
-.pokemonCardFront,
-.pokemonCardBack {
-    position: absolute;
-    /* width: 100%;
+    
+    @font-face {
+        font-family: "Flexo Regular";
+        src: url(fonts/flexo-regular-webfont.woff) format("woff");
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    @media screen and (prefers-reduced-motion: no-preference) {
+        html,
+        body {
+            scroll-behavior: smooth;
+        }
+    }
+    
+    body {
+        background: url(img/background-patterns/gplaypattern.png);
+        background-repeat: repeat;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .back-to-top-link {
+        left: 90%;
+        margin-bottom: 15%;
+        display: inline-block;
+        position: fixed;
+        top: calc(100vh - 5rem);
+        text-decoration: none;
+        pointer-events: all;
+        font-size: 2rem;
+        text-align: center;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 25%;
+        background: linear-gradient(119.36deg, #52B888 0%, #266378 100%);
+        color: #FFFFFF;
+        font-size: 60px;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(119.36deg, #52B888 0%, #266378 100%);
+        height: auto;
+    }
+    
+    .titleContainer {
+        align-self: center;
+        padding-top: 30px;
+    }
+    
+    .pokemonPokedexTitle {
+        font-size: 40px;
+        font-weight: none;
+        font-family: "Flexo Demi";
+        color: white;
+    }
+    
+    .welcomeUser {
+        text-align: right;
+        margin-right: 400px;
+        font-family: "Flexo Regular";
+        font-size: 18px;
+        color: white;
+        padding-top: 10px;
+    }
+    
+    .loginWhite {
+        padding-right: 10px;
+        height: 20px;
+        width: auto;
+        position: relative;
+    }
+    
+    h3 {
+        float: right;
+    }
+    
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
+    .chooseOrder,
+    .chooseType,
+    .chooseGeneration {
+        font-size: 20px;
+        font-family: "Flexo Regular";
+        padding: 10px;
+        width: 250px;
+        margin-top: 20px;
+        margin-right: 10px;
+        background-image: linear-gradient(to bottom, #a8dd9c, #91d99c, #76d59f, #57d1a4, #24ccaa);
+        border-radius: 10px;
+        color: white;
+        border: 2px solid #FFFFFF;
+    }
+    
+    option {
+        color: rgb(95, 95, 95);
+    }
+    
+    .searchInput {
+        align-self: flex-end;
+    }
+    
+    .searchBar {
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: 20px;
+        font-family: "Flexo Regular";
+        width: 250px;
+        margin-top: 20px;
+        margin-left: 33px;
+    }
+    
+    #sidebar {
+        position: fixed;
+        text-align: center;
+        width: 380px;
+        left: -380px;
+        height: auto;
+        background-image: linear-gradient(to bottom, #a8dd9c, #91d99c, #76d59f, #57d1a4, #24ccaa);
+        transition: all 0.75s ease-in-out;
+        border-bottom-right-radius: 20px;
+    }
+    
+    #sidebar .toggle-btn {
+        position: absolute;
+        left: 410px;
+        top: 30px;
+        cursor: pointer;
+    }
+    
+    #sidebar.active {
+        left: 0;
+    }
+    
+    #sidebar .toggle-btn span {
+        display: block;
+        width: 50px;
+        text-align: center;
+        font-style: bold;
+        font-size: 40px;
+        border: 2px solid rgb(95, 95, 95);
+        border-radius: 10px;
+        color: rgb(95, 95, 95);
+        background-color: white;
+    }
+    
+    #sidebar ul li {
+        font-family: "Flexo Regular";
+        font-size: 25px;
+        text-decoration: none;
+        color: white;
+        border-top: 2px solid #fff;
+        padding: 15px;
+    }
+    
+    #sidebar ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #menuPokeball {
+        max-width: 100px;
+    }
+    
+    .screen1 {
+        background-image: linear-gradient(to bottom, #24CCAA, #57D1A4, #76D59F, #91D99C, #A8DD9C);
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .welcome {
+        display: flex;
+        flex-flow: wrap column;
+        align-content: center;
+        justify-content: space-between;
+        font-family: "Flexo Regular";
+        align-self: center;
+    }
+    
+    .loginContainer {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 90%;
+        background-color: #f1ffef6e;
+        font-family: "Flexo Regular";
+        color: rgb(95, 95, 95);
+        margin-top: 45px;
+        border-radius: 10px;
+    }
+    
+    .pgLogo {
+        align-self: center;
+        width: 80%;
+        padding-top: 25%;
+        padding-bottom: 15%;
+    }
+    
+    .welcomeToPokedex {
+        font-family: "Flexo Demi";
+        align-self: center;
+        font-size: 20px;
+        color: rgb(95, 95, 95);
+        margin-bottom: 15px;
+    }
+    
+    #loginIcon,
+    #lockIcon {
+        width: 18px;
+        opacity: 0.5;
+        padding-left: 40px;
+    }
+    
+    .inputContainer {
+        align-self: center;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        background-color: rgba(255, 255, 255, 0.52);
+    }
+    
+    .username,
+    .password {
+        width: 50%;
+        height: 15px;
+        font-size: 20px;
+        padding: 15px;
+        font-family: "Flexo Regular";
+        border-radius: 10px;
+        border-style: none;
+        background: none;
+    }
+    
+    .sendInfo {
+        align-self: center;
+        font-size: 20px;
+        padding: 20px;
+        width: 250px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        background: linear-gradient(180deg, #A8DD9C 0%, #24CCAA 100%);
+        color: white;
+        border: 2px solid #FFFFFF;
+        border-radius: 10px;
+        font-family: "Flexo Regular";
+        font-weight: 500;
+    }
+    
+    #secondPage {
+        background-color: #ffffff;
+        margin: 0% 20% 0% 20%;
+        align-items: flex-start
+    }
+    
+    .allCards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 20px 20px;
+    }
+    
+    #card {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        background-image: linear-gradient(to bottom, #ead7ff, #dfc3ff, #ddbfff, #d6b1ff, #cb9dff);
+        width: 100%;
+        height: 100%;
+        width: 190px;
+        height: 330px;
+        border-radius: 20px;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        transition: all 1s ease-in-out;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    }
+    
+    #card:hover {
+        transform: rotateY(180deg);
+    }
+    
+    #pokemonImage {
+        max-width: 200px;
+    }
+    
+    .pokemonCardFront,
+    .pokemonCardBack {
+        position: absolute;
+        /* width: 100%;
     height: 100%; */
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-#pokemonCp {
-    font-family: "Flexo Demi";
-    color: rgb(95, 95, 95);
-    font-size: 24px;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-small {
-    font-family: "Flexo Regular";
-    font-size: 16px;
-    color: rgb(95, 95, 95);
-}
-
-#pokemonNum,
-#pokemonType {
-    display: flex;
-    align-self: left;
-    font-size: 18px;
-    font-family: "Flexo Regular";
-    color: rgb(95, 95, 95);
-}
-
-#pokemonName {
-    display: flex;
-    align-self: left;
-    font-family: "Flexo Demi";
-    color: rgb(95, 95, 95);
-    font-size: 24px;
-    margin-bottom: 5px;
-}
-
-.imgType {
-    width: 40px;
-    margin-right: 10px;
-}
-
-#pokemonHeight,
-#pokemonWeight,
-#pokemonSpawnChance,
-#pokemonEncounter {
-    display: flex;
-    justify-content: left;
-    font-size: 16px;
-    font-family: "Flexo Regular";
-    color: rgb(95, 95, 95);
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-
-#pokemonHeight {
-    border-top: 1px solid rgba(98, 98, 98, 0.548);
-}
-
-#pokemonEncounter {
-    border-bottom: 1px solid rgba(98, 98, 98, 0.548);
-}
-
-#pokemonResistance {
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    font-family: "Flexo Regular";
-    color: rgb(95, 95, 95);
-    margin-bottom: 10px;
-}
-
-.imgResistance {
-    width: 40px;
-    margin-left: 20px;
-}
-
-.pokemonCardBack {
-    transform: rotateY(180deg);
-}
-
-.kantoCard {
-    background-image: linear-gradient(to bottom, #ead7ff, #dfc3ff, #ddbfff, #d6b1ff, #cb9dff);
-}
-
-.johtoCard {
-    background-image: linear-gradient(to bottom, #ccd6fd, #c8d6fd, #B0C6FA, #A9C3F9, #94b6f1);
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(119.36deg, #52B888 0%, #266378 100%);
-    height: auto;
-}
-
-#downloads {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.downloadApp {
-    margin-top: 10px;
-    width: 200px;
-    padding: 20px;
-}
-
-#allRightsReserved {
-    align-self: center;
-    font-size: 20px;
-    font-family: "Flexo Regular";
-    padding: 10px;
-    color: white;
-    margin-bottom: 30px;
-}
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    #pokemonCp {
+        font-family: "Flexo Demi";
+        color: rgb(95, 95, 95);
+        font-size: 24px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    small {
+        font-family: "Flexo Regular";
+        font-size: 16px;
+        color: rgb(95, 95, 95);
+    }
+    
+    #pokemonNum,
+    #pokemonType {
+        display: flex;
+        align-self: left;
+        font-size: 18px;
+        font-family: "Flexo Regular";
+        color: rgb(95, 95, 95);
+    }
+    
+    #pokemonName {
+        display: flex;
+        align-self: left;
+        font-family: "Flexo Demi";
+        color: rgb(95, 95, 95);
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    
+    .imgType {
+        width: 40px;
+        margin-right: 10px;
+    }
+    
+    #pokemonHeight,
+    #pokemonWeight,
+    #pokemonSpawnChance,
+    #pokemonEncounter {
+        display: flex;
+        justify-content: left;
+        font-size: 16px;
+        font-family: "Flexo Regular";
+        color: rgb(95, 95, 95);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    
+    #pokemonHeight {
+        border-top: 1px solid rgba(98, 98, 98, 0.548);
+    }
+    
+    #pokemonEncounter {
+        border-bottom: 1px solid rgba(98, 98, 98, 0.548);
+    }
+    
+    #pokemonResistance {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        font-family: "Flexo Regular";
+        color: rgb(95, 95, 95);
+        margin-bottom: 10px;
+    }
+    
+    .imgResistance {
+        width: 40px;
+        margin-left: 20px;
+    }
+    
+    .pokemonCardBack {
+        transform: rotateY(180deg);
+    }
+    
+    .kantoCard {
+        background-image: linear-gradient(to bottom, #ead7ff, #dfc3ff, #ddbfff, #d6b1ff, #cb9dff);
+    }
+    
+    .johtoCard {
+        background-image: linear-gradient(to bottom, #ccd6fd, #c8d6fd, #B0C6FA, #A9C3F9, #94b6f1);
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(119.36deg, #52B888 0%, #266378 100%);
+        height: auto;
+    }
+    
+    #downloads {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .downloadApp {
+        margin-top: 10px;
+        width: 200px;
+        padding: 20px;
+    }
+    
+    #allRightsReserved {
+        align-self: center;
+        font-size: 20px;
+        font-family: "Flexo Regular";
+        padding: 10px;
+        color: white;
+        margin-bottom: 30px;
+    }
+    /* TABLET - Portrait */
+    
+    @media screen and (max-width:1023px) and (min-width:768px) {
+        .loginContainer {
+            width: 70%;
+            margin-top: 90px;
+        }
+        .welcomeUser {
+            margin-right: 8%;
+        }
+        .navBar {
+            flex-flow: row wrap;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .chooseOrder,
+        .chooseType,
+        .chooseGeneration {
+            font-size: 18px;
+            width: 200px;
+        }
+        option {
+            font-size: 14px;
+        }
+        .searchBar {
+            width: 650px;
+            margin-right: 40px;
+        }
+        #sidebar {
+            position: fixed;
+            z-index: 2;
+            font-size: 10px;
+            width: 300px;
+            left: -300px;
+        }
+        #sidebar .toggle-btn {
+            left: 330px;
+            top: 30px;
+        }
+        #sidebar ul li {
+            font-size: 20px;
+        }
+        #secondPage {
+            margin: 0% 10% 0% 10%;
+        }
+        #card {
+            z-index: 1;
+        }
+        .back-to-top-link {
+            left: 85%;
+            margin-bottom: 25%;
+            font-size: 4rem;
+        }
+    }
+    /* SMALL TABLET - Portrait */
+    
+    @media screen and (max-width: 767px) and (min-width: 600px) {
+        .loginContainer {
+            width: 70%;
+            margin-top: 60px;
+        }
+        .welcomeUser {
+            margin-right: 8%;
+        }
+        .navBar {
+            display: flex;
+            flex-flow: row wrap;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .pokemonPokedexTitle {
+            font-size: 30px;
+        }
+        .chooseOrder,
+        .chooseType,
+        .chooseGeneration {
+            font-size: 14px;
+            width: 160px;
+        }
+        option {
+            font-size: 14px;
+        }
+        .searchBar {
+            width: 510px;
+            margin-right: 40px;
+            font-size: 14px;
+        }
+        .loginWhite {
+            height: 16px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+        #sidebar {
+            position: fixed;
+            z-index: 2;
+            font-size: 10px;
+            width: 300px;
+            left: -300px;
+        }
+        #sidebar .toggle-btn {
+            left: 330px;
+            top: 30px;
+        }
+        #sidebar ul li {
+            font-size: 20px;
+        }
+        #secondPage {
+            margin: 0% 0% 0% 0%;
+        }
+        #card {
+            z-index: 1;
+        }
+        .back-to-top-link {
+            left: 85%;
+            margin-bottom: 25%;
+            font-size: 4rem;
+            z-index: 2;
+        }
+        .downloadApp {
+            width: 150px;
+            padding: 10px;
+        }
+        #allRightsReserved {
+            font-size: 16px;
+        }
+    }
+    /* MOBILE - Portrait */
+    
+    @media screen and (max-width: 599px) and (min-width: 360px) {
+        .loginContainer {
+            width: 90%;
+            margin-top: 20px;
+        }
+        .pgLogo {
+            padding-top: 25%;
+            padding-bottom: 22%;
+        }
+        #loginIcon,
+        #lockIcon {
+            width: 16px;
+        }
+        .inputContainer {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        .username,
+        .password {
+            font-size: 16px;
+            padding: 5px;
+        }
+        .sendInfo {
+            font-size: 16px;
+            padding: 15px;
+            width: 180px;
+        }
+        .welcomeUser {
+            margin-right: 15%;
+        }
+        .navBar {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+        }
+        .pokemonPokedexTitle {
+            margin-top: 40px;
+            font-size: 24px;
+        }
+        .chooseOrder,
+        .chooseType,
+        .chooseGeneration {
+            font-size: 14px;
+            width: 300px;
+            margin-left: 5px;
+        }
+        option {
+            font-size: 14px;
+        }
+        .searchInput {
+            align-self: center;
+        }
+        .searchBar {
+            width: 300px;
+            font-size: 14px;
+            margin-left: 0px;
+            margin-right: 5px;
+        }
+        .loginWhite {
+            height: 14px;
+        }
+        h3 {
+            font-size: 14px;
+        }
+        #sidebar {
+            position: fixed;
+            z-index: 2;
+            font-size: 10px;
+            width: 260px;
+            left: -260px;
+        }
+        #sidebar .toggle-btn {
+            left: 270px;
+        }
+        #sidebar .toggle-btn span {
+            display: block;
+            width: 45px;
+            font-size: 35px;
+            margin-top: -15px;
+        }
+        #sidebar ul li {
+            font-size: 20px;
+        }
+        #secondPage {
+            margin: 0% 10% 0% 10%;
+        }
+        #card {
+            z-index: 1;
+        }
+        .back-to-top-link {
+            left: 83%;
+            margin-bottom: 15%;
+            z-index: 2;
+            width: 3rem;
+            height: 3rem;
+            font-size: 45px;
+        }
+        .downloadApp {
+            width: 150px;
+            padding: 10px;
+        }
+        #allRightsReserved {
+            font-size: 16px;
+        }
+    }

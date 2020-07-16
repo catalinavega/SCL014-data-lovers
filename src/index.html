@@ -11,13 +11,13 @@
 <body>
     <header class='header'>
         <!--Back To Top -->
-        <a id="top"></a>
+        <a id='top'></a>
         <!-- TÍTULO DE PÁGINA -->
         <div class='titleContainer'>
             <p class='pokemonPokedexTitle'>POKÉMON GO: POKÉDEX</p>
         </div>
         <!-- MENÚ DESPLEGABLE -->
-        <div id='sidebar'>
+        <div id='sidebar' class='hidden'>
             <div id='menuButton' class='toggle-btn'>
                 <span>&#9776;</span>
             </div>
@@ -28,14 +28,14 @@
                     </li>
                     <li><a href='#'>Home</a></li>
                     <li><a href='#'>Pokédex Personal</a></li>
-                    <li><a id="information" href='#'>Información</a></li>
+                    <li><a id='information' href='#'>Información</a></li>
                     <li><a href='https://pokemongolive.com/es/events/'>Eventos</a></li>
                     <li><a href='https://pokemongolive.com/es/post/'>Noticias</a></li>
                     <li><a href='#'>Contacto</a></li>
                 </ul>
             </div>
         </div>
-        <div class="welcomeUser">
+        <div class='welcomeUser'>
             <img class='loginWhite' src='img/login - blanco.png'>
             <h3 id='welcomeUser'></h3>
         </div>
@@ -53,7 +53,7 @@
             </select>
             <!-- SELECT PARA FILTRAR POR TIPO -->
             <select id='chooseType' class='chooseType'>
-                <option value disabled selected>Filtrar por Tipo</option>
+                <option value disabled selected>Tipo de Pokémon</option>
                 <option value='steel'>Acero</option>
                 <option value='water'>Agua</option>
                 <option value='bug'>Bicho</option>
@@ -75,7 +75,7 @@
             </select>
             <!-- SELECT PARA FILTRAR POR GENERACIÓN -->
             <select id='chooseGeneration' class='chooseGeneration'>
-                <option value disabled selected>Filtrar por Generación</option>
+                <option value disabled selected>Generación</option>
                 <option value='kanto'>Kanto</option>
                 <option value='johto'>Johto</option>
             </select>
@@ -116,7 +116,7 @@
         <!-- DIV DE CARTAS -->
         <div id='allCards' class='allCards'>
         </div>
-        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">▲</a>
+        <a href='#top' class='back-to-top-link' aria-label='Scroll to Top'>▲</a>
     </div>
 
     <div id='thirdPage' class='screen3 hidden'>

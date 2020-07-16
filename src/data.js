@@ -29,9 +29,9 @@ export const sortOrder = {
                 return 1;
             }
             return 0;
-        };
+        }
 
-        //FUNCION PARA ORDENAR LA DATA SEGÚN EL NÚMERO
+        // FUNCION PARA ORDENAR LA DATA SEGÚN EL NÚMERO
         function orderItemsByNum(a, b) {
             if (a.num < b.num) {
                 return -1;
@@ -40,9 +40,9 @@ export const sortOrder = {
                 return 1;
             }
             return 0;
-        };
+        }
 
-        //FUNCIÓN PARA ORDENAR LA DATA SEGÚN MÁXIMO PODER DE COMBATE
+        // FUNCIÓN PARA ORDENAR LA DATA SEGÚN MÁXIMO PODER DE COMBATE
         function orderItemsByPC(a, b) {
             if (parseInt(a.stats['max-cp']) < parseInt(b.stats['max-cp'])) {
                 return -1;
@@ -51,8 +51,7 @@ export const sortOrder = {
                 return 1;
             }
             return 0;
-        };
+        }
         return result;
-
-    }
+    },
 };
