@@ -7216,7 +7216,7 @@ export default {
                 "name": "kanto"
             },
             "about": "Golem live up on mountains. If there is a large earthquake, these Pokémon will come rolling down off the mountains en masse to the foothills below.",
-            "img": "https://www.serebii.net/pokemongo/pokemon/076.png",
+            "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/076.png",
             "size": {
                 "height": "1.40 m",
                 "weight": "300.0 kg"
@@ -7328,7 +7328,7 @@ export default {
                 "name": "kanto"
             },
             "about": "Ponyta is very weak at birth. It can barely stand up. This Pokémon becomes stronger by stumbling and falling to keep up with its parent.",
-            "img": "https://www.serebii.net/pokemongo/pokemon/077.png",
+            "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/077.png",
             "size": {
                 "height": "0.99 m",
                 "weight": "30.0 kg"
