@@ -28,7 +28,7 @@
     .hidden {
         display: none;
     }
-    
+    /* Elemento que permite volver al inicio de la página */
     .back-to-top-link {
         left: 90%;
         margin-bottom: 15%;
@@ -74,6 +74,15 @@
         color: white;
         padding-top: 10px;
     }
+
+    .gpsUser {
+        text-align: right;
+        margin-right: 400px;
+        font-family: "Flexo Regular";
+        font-size: 16px;
+        color: white;
+        padding-top: 10px;
+    }
     
     .loginWhite {
         padding-right: 10px;
@@ -82,7 +91,7 @@
         position: relative;
     }
     
-    h3 {
+    h3, h4 {
         float: right;
     }
     
@@ -109,6 +118,13 @@
         border-radius: 10px;
         color: white;
         border: 2px solid #FFFFFF;
+        outline: 0;
+    }
+
+    .chooseOrder:focus,
+    .chooseType:focus,
+    .chooseGeneration:focus {
+        outline: none!important;
     }
     
     option {
@@ -120,18 +136,22 @@
     }
     
     .searchBar {
-        height: 40px;
         border-radius: 10px;
         border: none;
-        padding: 5px;
+        padding: 13px;
         padding-left: 10px;
         font-size: 20px;
         font-family: "Flexo Regular";
         width: 250px;
         margin-top: 20px;
         margin-left: 33px;
+        outline: 0;
     }
-    
+
+    .searcbar:focus{
+        outline: none!important;
+    }
+    /* Menú Desplegable */
     #sidebar {
         position: fixed;
         text-align: center;
@@ -167,9 +187,10 @@
     }
     
     #sidebar ul li {
+        text-decoration: none!important;
         font-family: "Flexo Regular";
+        text-align: left;
         font-size: 25px;
-        text-decoration: none;
         color: white;
         border-top: 2px solid #fff;
         padding: 15px;
@@ -179,10 +200,21 @@
         text-decoration: none;
         color: white;
     }
+
+    #sidebar ul li:hover {
+        background-image: linear-gradient(119.36deg, #4c8b6e 0%, #266378 100%);
+    }
+
+    .far, .fa, .fas {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     
     #menuPokeball {
+        margin-left: 120px;
         max-width: 100px;
     }
+    /* Fin Menú Desplegable */
     
     .screen1 {
         background-image: linear-gradient(to bottom, #24CCAA, #57D1A4, #76D59F, #91D99C, #A8DD9C);
@@ -254,8 +286,14 @@
         padding: 15px;
         font-family: "Flexo Regular";
         border-radius: 10px;
-        border-style: none;
         background: none;
+        border:0;
+        outline:0;
+    }
+
+    .username:focus,
+    .password:focus {
+        outline: none!important;
     }
     
     .sendInfo {
@@ -271,19 +309,25 @@
         border-radius: 10px;
         font-family: "Flexo Regular";
         font-weight: 500;
+        outline: 0;
+    }
+
+    .sendInfo:focus {
+        outline: none!important;
     }
     
     #secondPage {
         background-color: #ffffff;
+        min-height: 520px;
         margin: 0% 20% 0% 20%;
-        align-items: flex-start
+        align-items: flex-start;
     }
     
     .allCards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding: 20px 20px;
+        padding: 40px 20px 40px 20px;
     }
     
     #card {
@@ -299,7 +343,7 @@
         padding: 30px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         transition: all 1s ease-in-out;
         transform-style: preserve-3d;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
@@ -421,18 +465,18 @@
     }
     
     .downloadApp {
-        margin-top: 10px;
+        /* margin-top: 10px; */
         width: 200px;
-        padding: 20px;
+        /* padding: 20px; */
     }
     
     #allRightsReserved {
         align-self: center;
-        font-size: 20px;
+        font-size: 18px;
         font-family: "Flexo Regular";
         padding: 10px;
         color: white;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     /* TABLET - Portrait */
     
@@ -441,7 +485,7 @@
             width: 70%;
             margin-top: 90px;
         }
-        .welcomeUser {
+        .welcomeUser, .gpsUser {
             margin-right: 8%;
         }
         .navBar {
@@ -495,7 +539,7 @@
             width: 70%;
             margin-top: 60px;
         }
-        .welcomeUser {
+        .welcomeUser, .gpsUser {
             margin-right: 8%;
         }
         .navBar {
@@ -590,9 +634,6 @@
             padding: 15px;
             width: 180px;
         }
-        .welcomeUser {
-            margin-right: 15%;
-        }
         .navBar {
             display: flex;
             flex-flow: column wrap;
@@ -601,6 +642,18 @@
         .pokemonPokedexTitle {
             margin-top: 40px;
             font-size: 24px;
+        }
+        .loginWhite {
+            height: 14px;
+        }
+        .welcomeUser, .gpsUser {
+            margin-right: 15%;
+        }
+        h3 {
+            font-size: 14px;
+        }
+        h4 {
+            font-size: 12px;
         }
         .chooseOrder,
         .chooseType,
@@ -621,21 +674,15 @@
             margin-left: 0px;
             margin-right: 5px;
         }
-        .loginWhite {
-            height: 14px;
-        }
-        h3 {
-            font-size: 14px;
-        }
         #sidebar {
             position: fixed;
             z-index: 2;
             font-size: 10px;
-            width: 260px;
-            left: -260px;
+            width: 290px;
+            left: -290px;
         }
         #sidebar .toggle-btn {
-            left: 270px;
+            left: 300px;
         }
         #sidebar .toggle-btn span {
             display: block;

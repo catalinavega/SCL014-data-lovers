@@ -6,6 +6,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0'>
     <title>Data Lovers</title>
     <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
 <body>
@@ -26,18 +27,27 @@
                     <li>
                         <img id='menuPokeball' src='img/pokeball.png'>
                     </li>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>Pokédex Personal</a></li>
-                    <li><a id='information' href='#'>Información</a></li>
-                    <li><a href='https://pokemongolive.com/es/events/'>Eventos</a></li>
-                    <li><a href='https://pokemongolive.com/es/post/'>Noticias</a></li>
-                    <li><a href='#'>Contacto</a></li>
+                    <li><a href='#'><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                    <li><a id='userProfile' href='#'><i class='fa fa-user' aria-hidden='true'></i>Perfil</a></li>
+                    <li><a href='#'><i class='far fa-calendar-check'></i></i>Eventos</a></li>
+                    <li><a href='#'><i class='far fa-newspaper'></i>Noticias</a></li>
+                    <li><a href='#'><i class='fas fa-book'></i>Poképedia</a></li>
+                    <li><a href='#'><i class='fas fa-envelope'></i>Contacto</a></li>
+                    <li><a id='logOut' href='#'><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a></li>
                 </ul>
             </div>
         </div>
+
+        <!-- NAVBAR: Título + Bienvenida + Selects + Filtros + SearchBar -->
+        <!-- Usuario Logueado -->
         <div class='welcomeUser'>
             <img class='loginWhite' src='img/login - blanco.png'>
             <h3 id='welcomeUser'></h3>
+        </div>
+        <!-- Ubicación Usuario -->
+        <div class='gpsUser'>
+            <img class='loginWhite' src='img/pokemonLocation.png'>
+            <h4 id='gpsUser'>Santiago, CHILE</h4>
         </div>
         <!-- SELECT CON ORDEN Y FILTROS -->
         <div class='navBar'>
@@ -124,6 +134,7 @@
     </div>
 
     <footer id='footer' class='hidden'>
+        <p id='allRightsReserved'>Descarga Pokémon Go para tu dispositivo</p>
         <div id='downloads'>
             <a href='https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=es_CL'><img id='googlePlay' class='downloadApp' alt='' src='img/googleplay.png'></a>
             <a href='https://apps.apple.com/es/app/pok%C3%A9mon-go/id1094591345'><img id='appleStore' class='downloadApp' alt='' src='img/applestore.png'></a>
@@ -132,5 +143,4 @@
     </footer>
     <script src='main.js' type='module'></script>
 </body>
-
 </html>
