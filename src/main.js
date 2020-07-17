@@ -116,3 +116,8 @@ function searchBarPokemons() {
     document.getElementById('allCards').innerHTML = '';
     showPokemonData(searchPokemon);
 }
+// LOGOUT
+document.getElementById('logOut').addEventListener('click', reload);
+function reload(){
+    location.reload(true);
+}
