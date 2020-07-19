@@ -34,10 +34,9 @@
         margin-bottom: 15%;
         display: inline-block;
         position: fixed;
-        top: calc(100vh - 5rem);
+        top: calc(95vh - 5rem);
         text-decoration: none;
         pointer-events: all;
-        font-size: 2rem;
         text-align: center;
         width: 5rem;
         height: 5rem;
@@ -45,6 +44,8 @@
         background: linear-gradient(119.36deg, #52B888 0%, #266378 100%);
         color: #FFFFFF;
         font-size: 60px;
+        left: 83%;
+        z-index: 2;
     }
     
     .header {
@@ -161,6 +162,7 @@
         background-image: linear-gradient(to bottom, #a8dd9c, #91d99c, #76d59f, #57d1a4, #24ccaa);
         transition: all 0.75s ease-in-out;
         border-bottom-right-radius: 20px;
+        z-index: 1;
     }
     
     #sidebar .toggle-btn {
@@ -318,7 +320,7 @@
     
     #secondPage {
         background-color: #ffffff;
-        min-height: 520px;
+        min-height: 530px;
         margin: 0% 20% 0% 20%;
         align-items: flex-start;
     }
@@ -347,6 +349,7 @@
         transition: all 1s ease-in-out;
         transform-style: preserve-3d;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+        z-index: 0;
     }
     
     #card:hover {
@@ -409,7 +412,7 @@
     #pokemonEncounter {
         display: flex;
         justify-content: left;
-        font-size: 16px;
+        font-size: 18px;
         font-family: "Flexo Regular";
         color: rgb(95, 95, 95);
         margin-left: 20px;
@@ -425,18 +428,24 @@
         border-bottom: 1px solid rgba(98, 98, 98, 0.548);
     }
     
-    #pokemonResistance {
+    #pokemonResistance, #pokemonWeaknesses {
         display: flex;
         justify-content: center;
-        font-size: 16px;
+        margin-left: 10px;
+        font-size: 18px;
         font-family: "Flexo Regular";
         color: rgb(95, 95, 95);
         margin-bottom: 10px;
     }
+
+    #imageContainer {
+        display: inline-block;
+        max-width: 220px;
+        padding-bottom: 10px;
+    }
     
     .imgResistance {
-        width: 40px;
-        margin-left: 20px;
+        width: 35px;
     }
     
     .pokemonCardBack {
@@ -465,9 +474,8 @@
     }
     
     .downloadApp {
-        /* margin-top: 10px; */
         width: 200px;
-        /* padding: 20px; */
+        padding-left: 10px;
     }
     
     #allRightsReserved {
@@ -520,6 +528,9 @@
         #sidebar ul li {
             font-size: 20px;
         }
+        #menuPokeball {
+            margin-left: 80px;
+            }
         #secondPage {
             margin: 0% 10% 0% 10%;
         }
@@ -693,8 +704,12 @@
         #sidebar ul li {
             font-size: 20px;
         }
+        #menuPokeball {
+        margin-left: 80px;
+        }
         #secondPage {
             margin: 0% 10% 0% 10%;
+            min-height: 400px;
         }
         #card {
             z-index: 1;
@@ -708,7 +723,7 @@
             font-size: 45px;
         }
         .downloadApp {
-            width: 150px;
+            width: 100px;
             padding: 10px;
         }
         #allRightsReserved {
