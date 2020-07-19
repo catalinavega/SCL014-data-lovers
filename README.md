@@ -4,8 +4,8 @@
 
 * [1. Definición del Producto](#1-definicion-del-producto)
 * [2. Perfil del Usuario](#2-perfil-del-usuario)
-* [2. Historias de Usuario](#2-historias-de-usuario)
-* [3. Prototipos](#3-prototipos)
+* [3. Historias de Usuario](#2-historias-de-usuario)
+* [4. Prototipos](#3-prototipos)
 * [4. Imagen Final del Proyecto](#4-imagen-final-del-proyecto)
 
 ***
@@ -69,6 +69,14 @@ A continuación dejamos otros datos obtenidos que hemos considerado al momento d
 
 Nuestros potenciales usuarios harían uso de "Pokémon Go: Pokédex" en tiempos intermedios de ocio con fin de complementar sus conocimientos técnicos de Pokémon, 
 pudiendo ordenar la información en orden ascendente o descendente, filtrar por tipo de Pokémon, de modo que los guíe a determinar cuál de sus Pokémon capturados será más útil en una incursión (raid), cuáles les faltan para completar la Pokédex, qué Pokémon resistirá mejor en un gimnasio o en algún encuentro con el equipo Rocket en alguna de las pokeparadas.
+
+* **User Personas**
+
+![json-interfaz](https://i.imgur.com/LF7VAK4.jpg)
+
+![json-interfaz](https://i.imgur.com/0jKlHLw.jpg)
+
+![json-interfaz](https://i.imgur.com/80i2bz8.jpg)
 
 ## 3. HISTORIAS DE USUARIO
 
@@ -207,4 +215,20 @@ al producto final y nuevas historias de usuario:
 
 ## 5. IMAGEN FINAL DEL PROYECTO
 
-Link a proyecto: https://catalinavega.github.io/SCL014-data-lovers/
+**Link a proyecto:** https://catalinavega.github.io/SCL014-data-lovers/
+
+* **Versión Mobile**
+
+![json-interfaz](https://i.imgur.com/JojZxwW.jpg)
+
+![json-interfaz](https://i.imgur.com/st6GuS9.jpg)
+
+* **Versión Tablet**
+
+![json-interfaz](https://i.imgur.com/7dVEzpC.jpg)
+
+* **Versión Desktop**
+
+![json-interfaz](https://i.imgur.com/Jc8cg49.jpg)
+
+![json-interfaz](https://i.imgur.com/l5Srjhs.jpg)
