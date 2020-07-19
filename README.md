@@ -49,8 +49,6 @@ requerido por los jugadores:
 
 ![json-interfaz](https://i.imgur.com/NmF2SE5.png)
 
-![json-interfaz](https://i.imgur.com/8bP09Rp.png)
-
 * **¿Qué tipo de interfaz les gustaría a nuestros usuarios?**
 
 De forma casi unánime, nuestros potenciales usuarios mencionaron que les gustaría una app que utilice los colores y que tenga la identidad gráfica del juego. 
@@ -159,7 +157,7 @@ D.T.:
 - [x] Se utiliza html dinámico
 - [x] Se trabaja en pair-programming
 - [x] El código está actualizado en el repositorio
-- [x] Se realiza test de usabilidad al menos a 5 usuarios
+- [x] Se realiza test de usabilidad al menos a 3 usuarios
 - [x] Se afinan detalles finales
 
 * **Planificación**
@@ -171,6 +169,37 @@ Link a Trello: https://trello.com/b/qhvhu0vq/data-lovers
 1. Para proveer una navegación personalizada, hemos creado una sección de login al momento de ingresar a la aplicación, solicitando un username y password.
 2. Se crearon opciones para que el usuario pueda organizar la Pokédex con los siguientes criterios: A-Z, Z-A, n° menor (primero), n° mayor (primero).
 3. Se crean filtros para que el usuario pueda elegir un tipo de Pokémon específico y la Pokédex retorne solo aquellos que cumplan con la condición.
+4. El menú desplegable contiene las siguientes secciones: Home, Perfil, Calendario Pokémon, Noticias, Poképedia, FAQ y Cerrar Sesión.
+
+* **Test de Usabilidad**
+
+Los test de usabilidad se realizaron con 3 usuarios y se testearon los diseños tanto para desktop como para mobile.
+Se le solicitó a los usuarios realizar las siguientes tareas, a medida que ellos iban haciendo observaciones y describiendo lo que hacían:
+
+1. Ingrese a la aplicación con usuario y password
+2. Ordene los pokémon según su PC
+3. Ordene a los pokémon alfabéticamente
+4. Filtre a los pokémon según su tipo
+5. Busque a un pokémon con la barra de búsqueda
+6. Busque información adicional de cada pokémon
+7. Encuentre el menú de la aplicación
+8. Cierre sesión
+
+De dichos test de usabilidad, se desprendió lo siguiente:
+
+![json-interfaz](https://i.imgur.com/8gQq8gU.jpg)
+
+* **S.U.S.**
+
+Luego del testeo de usabilidad, se encuestó a los usuarios para evaluar la aplicación cuantitativamente.
+Los usuarios pudieron evaluar con una escala del 1 al 5, siendo 1 Totalmente en Desacuerdo y 5, Totalmente de acuerdo.
+
+* +80: Muy Bueno
+* Entre 50 y 80: Regular
+* -50: Malo
+
+![json-interfaz](https://i.imgur.com/awaI13O.jpg)
+
 
 * **Feedback adicional de los usuarios**
 
