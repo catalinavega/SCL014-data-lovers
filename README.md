@@ -70,9 +70,19 @@ pudiendo ordenar la información en orden ascendente o descendente, filtrar por 
 
 * **User Personas**
 
+Luego de las encuestas y poder entrevistar a algunos de los usuarios para conocerlos, pudimos elaborar tres perfiles. Si bien todos ellos poseen niveles altos en el juego, sus motivaciones varían considerablemente.
+
+
+1. Por un lado tenemos a Benjamín, quien ha estado jugando desde que la aplicación está disponible. Juega todos los días y destina por lo bajo 4 horas diarias a jugar. Siempre está pendiente de los eventos, raids, community days, horas destacadas, entre otros. Es un **jugador competitivo** que está constantemente revisando páginas con información relacionada al juego. Ha generado comunidad gracias al juego, llegando a reunirse hasta con 30 personas para completar alguna misión. Por lo general tiende a reclutar nuevas personas para jugar. Su actual misión en el juego es duplicar los puntos de experiencia que posee en el presente.
+
 ![json-interfaz](https://i.imgur.com/LF7VAK4.jpg)
 
+
+2. Por un otro lado tenemos a Claudio, un jugador que también está en el nivel más alto posible en el juego, pero está a varios millones de puntos de experiencia de Benjamín. Juega todos los días, pero su enfoque no es competitivo. Claudio tiene un perfil de **jugador coleccionista**, le gusta atrapar nuevos pokémon en todas sus versiones, y como su propósito es completar la pokédex, está inclinado a buscar información de pokémon variocolor. Claudio es una persona más nostálgica en relación al juego: tuvo la oportunidad de ver la serie en televisión a una muy temprana edad, jugar cartas Pokémon al crecer, y de ahí viene su espíritu de "atraparlos a todos", independiente de otros plus que pueda tener el juego.
+
 ![json-interfaz](https://i.imgur.com/0jKlHLw.jpg)
+
+3. Por último tenemos a Denisse, una jugadora que a diferencia de Benjamín y Claudio, lleva dos años menos jugando. Juega menos de 4 veces a la semana, y cuando lo hace es por períodos cortos. El juego capta su atención y la entretiene, pero también suele distraerse con otras cosas. Más que jugar por iniciativa propia, es porque sus amigos lo hacen y el juego es una posibilidad de hacer algo conjunto, por ende es más una **jugadora social**. Le cautiva el diseño de los pokémon y le entretiene ir completando su pokédex. Al ser una jugadora de tipo social, para ella es muy importante que cualquier app relacionada le pueda brindar la opción de volver a conectar con sus amistades.
 
 ![json-interfaz](https://i.imgur.com/80i2bz8.jpg)
 
@@ -206,10 +216,9 @@ Los usuarios pudieron evaluar con una escala del 1 al 5, siendo 1 Totalmente en 
 Dejamos a continuación algunos de los comentarios adicionales que recibimos de nuestros potenciales usuarios, esto a considerar para futuras mejoras 
 al producto final y nuevas historias de usuario:
 
-1. "Me gustaría más información sobre la probabilidad de aparición variocolor de cada Pokémon" (en referencia al spawn de Pokémon Shiny)
-2. "Que haya más información sobre los ataques de los pokémones"
-3. "Que no ocupe mucha memoria en el celular"
-4. "Mostrar los mejores ataques de los pokémon y si conviene o no agregar 2do ataque"
+1. "Esta aplicación la recomendaría a alguien que esté usando por primera vez el juego, porque la información entregada en otros sitios puede resultar muy compleja de analizar y puede saturar o asustar al jugador. Esta app usa los mismos íconos del juego, los mismos colores y eso me gusta. Puede resultar agotadora la navegación si es que quieres encontrar algún pokemon scrolleando desde el celular. Los filtros no se suman entre sí, por lo tanto si quieres encontrar un tipo de pokémon de cierta generación, igual sigue mostrando los de ambas generaciones. Es útil poder filtrar por tipo para determinar qué pokémon sirve para una raid. Me gustó el diseño y la identidad gráfica, es amigable". 
+2. "Me gustaría que tuviera filtro o información de pokémon variocolor. Ojalá que tuviera una sección que tuviera las raids del momento. Desde el celular es más difícil verificar que las tarjetas se dan vuelta".
+3. "Quizás la aplicación necesite una sección educativa para explicar los tipos de pokémon y su iconografía. Me gustaría que la aplicación tuviera trivias, ránkings, de modo de ir aprendiendo más de Pokémon. Creo que también sería agradable ver alguna galería donde la gente pueda subir fotos de eventos, de sus pokémon, etc. Me gusta que sean las gráficas originales". 
 
 
 ## 4. PROTOTIPOS
