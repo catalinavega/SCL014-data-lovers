@@ -39,13 +39,3 @@ describe('sortOrder.chooseOrder', () => {
         expect(data.pokemon[0].stats['max-cp']).toBe('4178');
     });
 });
-
-// describe('anotherExample', () => {
-//   it('is a function', () => {
-//     expect(typeof anotherExample).toBe('function');
-//   });
-
-//   it('returns `anotherExample`', () => {
-//     expect(anotherExample()).toBe('OMG');
-//   });
-// });

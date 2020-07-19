@@ -113,46 +113,46 @@ D.T.:
 **HU3: "Yo como jugador de PG, quiero clickear en las fichas y que se den vuelta como cartas para ver la información adicional de cada pokémon".**
 
 C.A.:
-- [ ] Cuando el usuario elige a un Pokémon, la ficha se da vuelta como una carta y muestra información adicional
-- [ ] La transición del giro de la ficha es suave
-- [ ] El color del reverso es el mismo que el frontal (correspondiente a cada generación)
+- [x] Cuando el usuario elige a un Pokémon, la ficha se da vuelta como una carta y muestra información adicional
+- [x] La transición del giro de la ficha es suave
+- [x] El color del reverso es el mismo que el frontal (correspondiente a cada generación)
 
 D.T.:
-- [ ] Se respeta el diseño de prototipado
-- [ ] Se utiliza html semántico
-- [ ] Se utiliza html dinámico
-- [ ] Se trabaja en pair-programming
-- [ ] La transición se crea con CSS en stylesheet
-- [ ] El código está actualizado en el repositorio
-- [ ] Se implementa función para obtener la información adicional de cada pokémon
+- [x] Se respeta el diseño de prototipado
+- [x] Se utiliza html semántico
+- [x] Se utiliza html dinámico
+- [x] Se trabaja en pair-programming
+- [x] La transición se crea con CSS en stylesheet
+- [x] El código está actualizado en el repositorio
+- [x] Se implementa función para obtener la información adicional de cada pokémon
 
 **HU4: "Yo como jugador de PG, quiero saber cuáles son las chances de spawn de un pokémon, para priorizar las capturas".**
 
 C.A.:
-- [ ] Cuando el usuario elige a un Pokémon, las chances de spawn son mostradas al reverso de la ficha
-- [ ] La información es entregada de forma clara y concisa
+- [x] Cuando el usuario elige a un Pokémon, las chances de spawn son mostradas al reverso de la ficha
+- [x] La información es entregada de forma clara y concisa
 
 D.T.:
-- [ ] Se respeta el diseño de prototipado
-- [ ] Se utiliza html semántico
-- [ ] Se utiliza html dinámico
-- [ ] Se trabaja en pair-programming
-- [ ] El código está actualizado en el repositorio
+- [x] Se respeta el diseño de prototipado
+- [x] Se utiliza html semántico
+- [x] Se utiliza html dinámico
+- [x] Se trabaja en pair-programming
+- [x] El código está actualizado en el repositorio
 
 **HU5: "Yo como jugador de PG, quiero conocer la tasa de captura base de un pokémon, para optimizar mis recursos (pokeballs, bayas, inciensos, etc.)"**
 
 C.A.:
-- [ ] Cuando el usuario elige a un Pokémon, la tasa de captura base es mostrada al reverso de la ficha
-- [ ] La información es entregada de forma clara y concisa
+- [x] Cuando el usuario elige a un Pokémon, la tasa de captura base es mostrada al reverso de la ficha
+- [x] La información es entregada de forma clara y concisa
  
 D.T.:
-- [ ] Se respeta el diseño de prototipado
-- [ ] Se utiliza html semántico
-- [ ] Se utiliza html dinámico
-- [ ] Se trabaja en pair-programming
-- [ ] El código está actualizado en el repositorio
-- [ ] Se realiza test de usabilidad al menos a 5 usuarios
-- [ ] Se afinan detalles finales
+- [x] Se respeta el diseño de prototipado
+- [x] Se utiliza html semántico
+- [x] Se utiliza html dinámico
+- [x] Se trabaja en pair-programming
+- [x] El código está actualizado en el repositorio
+- [x] Se realiza test de usabilidad al menos a 5 usuarios
+- [x] Se afinan detalles finales
 
 * **Planificación**
 

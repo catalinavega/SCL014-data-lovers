@@ -55,9 +55,8 @@ const showPokemonData = (data) => {
                 <p id='pokemonWeight'>PESO:&nbsp;<b>${data[pokemon].size.weight}</b></p>
                 <p id='pokemonSpawnChance'>% Aparición:&nbsp;<b>${data[pokemon]['spawn-chance']}%</b></p>
                 <p id='pokemonEncounter'>% Captura Base:&nbsp;<b>${data[pokemon].encounter['base-capture-rate']}%</b></p>
-                <p id='pokemonResistance'><b>RESISTENCIA</p></p>
-                <p id='pokemonResistanceImg'>
-                <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[0]}.png'>
+                <p id='pokemonResistance'><b>RESISTENTE A:</b></p>
+                <p id='imageContainer'><img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[0]}.png'>
                 <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[1]}.png'>
                 <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[2]}.png'>
                 <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[3]}.png'>
@@ -65,6 +64,12 @@ const showPokemonData = (data) => {
                 <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[5]}.png'>
                 <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[6]}.png'>
                 <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].resistant[7]}.png'></p>
+                <p id='pokemonWeaknesses'><b>DÉBIL FRENTE A:</b></p>
+                <p id='imageContainer'><img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].weaknesses[0]}.png'>
+                <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].weaknesses[1]}.png'>
+                <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].weaknesses[2]}.png'>
+                <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].weaknesses[3]}.png'>
+                <img class='imgResistance' alt='' src='img/type-icons/${data[pokemon].weaknesses[4]}.png'></p>
             </div>
         </div>`;
 
