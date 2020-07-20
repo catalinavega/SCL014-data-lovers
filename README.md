@@ -44,7 +44,7 @@ Nuestro usuario es analítico y quiere hacer comparaciones entre pokémones, des
 
 * **¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?**
 
-Al momento de jugar Pokémon Go, nos damos cuenta de que en el momento de que un pokémon es capturado se despliega una ficha informativa, siendo aquella que gana en jerarquía el **Poder de Combate**. Esta información está sobre la imagen principal de cada pokémon. En nuestra encuesta, esto se corrobora, ya que es el dato más 
+Al momento de jugar Pokémon Go, nos damos cuenta de que en el momento de que un pokémon es capturado se despliega una ficha informativa, siendo aquella que gana en jerarquía **Puntos de Combate**. Esta información está sobre la imagen principal de cada pokémon. En nuestra encuesta, esto se corrobora, ya que es el dato más 
 requerido por los jugadores:
 
 ![json-interfaz](https://i.imgur.com/NmF2SE5.png)
@@ -53,7 +53,6 @@ requerido por los jugadores:
 
 De forma casi unánime, nuestros potenciales usuarios mencionaron que les gustaría una app que utilice los colores y que tenga la identidad gráfica del juego. 
 En otras palabras, utilizar una gama de colores que va desde matices de verde al azul petróleo, ya que les da más confianza. 
-Esto también afectaría las tonalidades a usar respecto a la presentación de las fichas de cada pokémon, ya que la pokédex para Kanto usa tonos lila y la pokédex de Johto, matices de azul.
 A continuación dejamos otros datos obtenidos que hemos considerado al momento de prototipar:
 
 ![json-interfaz](https://i.imgur.com/5FTcmL6.png)
@@ -78,7 +77,7 @@ Luego de las encuestas y poder entrevistar a algunos de los usuarios para conoce
 ![json-interfaz](https://i.imgur.com/LF7VAK4.jpg)
 
 
-2. Por un otro lado tenemos a Claudio, un jugador que también está en el nivel más alto posible en el juego, pero está a varios millones de puntos de experiencia de Benjamín. Juega todos los días, pero su enfoque no es competitivo. Claudio tiene un perfil de **jugador coleccionista**, le gusta atrapar nuevos pokémon en todas sus versiones, y como su propósito es completar la pokédex, está inclinado a buscar información de pokémon variocolor. Claudio es una persona más nostálgica en relación al juego: tuvo la oportunidad de ver la serie en televisión a una muy temprana edad, jugar cartas Pokémon al crecer, y de ahí viene su espíritu de "atraparlos a todos", independiente de otros plus que pueda tener el juego.
+2. Por otro lado tenemos a Claudio, un jugador que también está en el nivel más alto posible en el juego, pero está a varios millones de puntos de experiencia de Benjamín. Juega todos los días, pero su enfoque no es competitivo. Claudio tiene un perfil de **jugador coleccionista**, le gusta atrapar nuevos pokémon en todas sus versiones, y como su propósito es completar la pokédex, está inclinado a buscar información de pokémon variocolor. Claudio es una persona más nostálgica en relación al juego: tuvo la oportunidad de ver la serie en televisión a una muy temprana edad, jugar cartas Pokémon al crecer, y de ahí viene su espíritu de "atraparlos a todos", independiente de otros plus que pueda tener el juego.
 
 ![json-interfaz](https://i.imgur.com/0jKlHLw.jpg)
 
@@ -177,9 +176,10 @@ Link a Trello: https://trello.com/b/qhvhu0vq/data-lovers
 * **Adicional a Historias de Usuario**
 
 1. Para proveer una navegación personalizada, hemos creado una sección de login al momento de ingresar a la aplicación, solicitando un username y password.
-2. Se crearon opciones para que el usuario pueda organizar la Pokédex con los siguientes criterios: A-Z, Z-A, n° menor (primero), n° mayor (primero).
-3. Se crean filtros para que el usuario pueda elegir un tipo de Pokémon específico y la Pokédex retorne solo aquellos que cumplan con la condición.
-4. El menú desplegable contiene las siguientes secciones: Home, Perfil, Calendario Pokémon, Noticias, Poképedia, FAQ y Cerrar Sesión.
+2. En el header, el usuario recibe un pequeño texto de bienvenida junto a una sección de geolocalización.
+3. Se crearon opciones para que el usuario pueda organizar la Pokédex con los siguientes criterios: A-Z, Z-A, n° menor (primero), n° mayor (primero).
+4. Se crean filtros para que el usuario pueda elegir un tipo de Pokémon específico y la Pokédex retorne solo aquellos que cumplan con la condición.
+5. El menú desplegable contiene las siguientes secciones: Home, Perfil, Calendario Pokémon, Noticias, Poképedia, FAQ y Cerrar Sesión.
 
 * **Test de Usabilidad**
 
@@ -245,11 +245,15 @@ al producto final y nuevas historias de usuario:
 
 * **Primera Versión**
 
+Link Figma: https://www.figma.com/proto/rLOtyW2DbAwtncAurx10AJ/PG-desk?node-id=8%3A1&scaling=min-zoom
+
 ![json-interfaz](https://imgur.com/6VIcUKv.jpg)
 
 ![json-interfaz](https://imgur.com/xqCYf4n.jpg)
 
 ![json-interfaz](https://imgur.com/pIZ1PQK.jpg)
+
+* **Segunda Versión**
 
 ## 5. IMAGEN FINAL DEL PROYECTO
 
