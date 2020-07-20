@@ -256,7 +256,7 @@ Link Figma: https://www.figma.com/proto/rLOtyW2DbAwtncAurx10AJ/PG-desk?node-id=8
 
 * **Segunda Versión**
 
-Link Figma: https://www.figma.com/proto/RvRbVwLNH54JS5b2ORQyw6/Pok%C3%A9mon-Go-Pok%C3%A9dex?node-id=15%3A21&viewport=-1422%2C513%2C0.5&scaling=min-zoom
+Link Figma: https://www.figma.com/proto/RvRbVwLNH54JS5b2ORQyw6/Pok%C3%A9mon-Go-Pok%C3%A9dex?node-id=1%3A2&viewport=-1422%2C513%2C0.5&scaling=min-zoom
 
 ![json-interfaz](https://i.imgur.com/A8Mg36F.jpg)
 
