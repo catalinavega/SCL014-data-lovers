@@ -131,6 +131,13 @@
     option {
         color: rgb(95, 95, 95);
     }
+
+    .chooseOrder:hover,
+    .chooseType:hover,
+    .chooseGeneration:hover {
+        background: linear-gradient(119.36deg, #41926c 0%, #266378 100%);
+        cursor: pointer;
+    }
     
     .searchInput {
         align-self: flex-end;
@@ -151,6 +158,10 @@
 
     .searcbar:focus{
         outline: none!important;
+    }
+
+    .searchBar:hover{
+        cursor: pointer;
     }
     /* Menú Desplegable */
     #sidebar {
@@ -316,6 +327,11 @@
 
     .sendInfo:focus {
         outline: none!important;
+    }
+
+    .sendInfo:hover {
+        background: linear-gradient(119.36deg, #41926c 0%, #266378 100%);
+        cursor: pointer;
     }
     
     #secondPage {
