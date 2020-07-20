@@ -253,7 +253,12 @@ Link Figma: https://www.figma.com/proto/rLOtyW2DbAwtncAurx10AJ/PG-desk?node-id=8
 
 ![json-interfaz](https://imgur.com/pIZ1PQK.jpg)
 
+
 * **Segunda Versión**
+
+Link Figma: https://www.figma.com/proto/RvRbVwLNH54JS5b2ORQyw6/Pok%C3%A9mon-Go-Pok%C3%A9dex?node-id=15%3A21&viewport=-1422%2C513%2C0.5&scaling=min-zoom
+
+![json-interfaz](https://i.imgur.com/A8Mg36F.jpg)
 
 ## 5. IMAGEN FINAL DEL PROYECTO
 
@@ -274,3 +279,6 @@ Link Figma: https://www.figma.com/proto/rLOtyW2DbAwtncAurx10AJ/PG-desk?node-id=8
 ![json-interfaz](https://i.imgur.com/Jc8cg49.jpg)
 
 ![json-interfaz](https://i.imgur.com/l5Srjhs.jpg)
+
+
+DEVELOPERS: Anelisse Acevedo + Catalina Vega
