@@ -20,6 +20,7 @@
 Previo a la creación del producto, se determinó que cierta data debía estar incluída a como diera lugar, por lo cual el presentar a todos los Pokémon por el orden de la Pokédex nos parecía fundamental (del #001 al #251). Tanto en la serie como en el juego, el orden ha sido un factor determinante a la hora de insertarse en el mundo de Pokémon. Sin importar el nivel de experiencia del jugador, siempre habrá tres pokémones clásicos identificables: Bulbasaur, Charmander y Squirtle, cada uno presentado junto a sus evoluciones, mostrando su imagen, breve descripción, características físicas, tales como peso y estatura, y su tipo (planta, bicho, fuego, agua, tierra, etc.) y este orden es lo que el jugador espera.
 Podemos inferir que de toda la data disponible, las siguientes nos permiten ofrecer una experiencia distinta al usuario: tasa de huida base, tasa de captura base, oportunidad de spawn, resistencia base (stamina), poder de combate y salud (máximo).
 
+
 ## 2. PERFIL DEL USUARIO
 
 * **¿Quiénes son los principales usuarios de producto?** 
@@ -84,6 +85,7 @@ Luego de las encuestas y poder entrevistar a algunos de los usuarios para conoce
 3. Por último tenemos a Denisse, una jugadora que a diferencia de Benjamín y Claudio, lleva dos años menos jugando. Juega menos de 4 veces a la semana, y cuando lo hace es por períodos cortos. El juego capta su atención y la entretiene, pero también suele distraerse con otras cosas. Más que jugar por iniciativa propia, es porque sus amigos lo hacen y el juego es una posibilidad de hacer algo conjunto, por ende es más una **jugadora social**. Le cautiva el diseño de los pokémon y le entretiene ir completando su pokédex. Al ser una jugadora de tipo social, para ella es muy importante que cualquier app relacionada le pueda brindar la opción de volver a conectar con sus amistades.
 
 ![json-interfaz](https://i.imgur.com/80i2bz8.jpg)
+
 
 ## 3. HISTORIAS DE USUARIO
 
@@ -223,7 +225,23 @@ al producto final y nuevas historias de usuario:
 
 ## 4. PROTOTIPOS
 
-### 4.1 Prototipo de Baja Fidelidad
+### 4.1 Colores y Tipografía
+
+![json-interfaz](https://i.imgur.com/nsI5LNP.jpg)
+
+* **Paleta de Colores:**
+En el juego de Pokémon Go las gradientes son parte del diseño y se han incorporado, a su vez, al diseño de la aplicación, tratando de que sean lo más equilibradas posibles para no tensar sobre el uso de este recurso gráfico que suele verse excesivamente saturado en muchas ocasiones.
+
+1. Gradientes azul-verde y verde-aguamarina: Colores que transmitan la idea de crecimiento, fertilidad, generosidad, natural, estabilidad, armonía, calma y confianza.
+2. Gradientes con matices de púrpura: Colores que transmitan la idea de imaginativo, creativo, nostálgico.
+3. Gris y blanco para los textos: Elegidos por tema de accesibilidad y para contrastar con los colores de fondo o hover.
+
+
+* **Tipografía:**
+Para todo el cuerpo del producto, se trabajó con tipografía Flexo, letra de tipo sans-serif que evoca la sensación de estar viendo un dispositivo digital, lo cual se condice con la idea de que la aplicación funcione finalmente como una Pokédex Personal.
+
+
+### 4.2 Prototipo de Baja Fidelidad
 
 * **Versión Desktop**
 
@@ -241,7 +259,8 @@ al producto final y nuevas historias de usuario:
 
 ![json-interfaz](https://i.imgur.com/w08CWMG.jpg)
 
-### 4.2 Prototipo de Alta Fidelidad
+
+### 4.3 Prototipo de Alta Fidelidad
 
 * **Primera Versión**
 
@@ -259,6 +278,7 @@ Link Figma: https://www.figma.com/proto/rLOtyW2DbAwtncAurx10AJ/PG-desk?node-id=8
 Link Figma: https://www.figma.com/proto/RvRbVwLNH54JS5b2ORQyw6/Pok%C3%A9mon-Go-Pok%C3%A9dex?node-id=1%3A2&viewport=-1422%2C513%2C0.5&scaling=min-zoom
 
 ![json-interfaz](https://i.imgur.com/A8Mg36F.jpg)
+
 
 ## 5. IMAGEN FINAL DEL PROYECTO
 

@@ -156,7 +156,7 @@
         outline: 0;
     }
 
-    .searcbar:focus{
+    .searchBar:focus{
         outline: none!important;
     }
 
